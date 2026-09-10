@@ -99,6 +99,23 @@ html,body{
 .brand-title span{color:var(--blue);}
 .brand-sub{font-size:12px;color:var(--text-dim);letter-spacing:0.2px;}
 
+.sample-data-banner{
+  display:flex;align-items:center;gap:10px;
+  padding:10px 32px;
+  background:rgba(245,158,11,0.14);
+  border-bottom:1px solid rgba(245,158,11,0.35);
+  color:#f5b942;font-size:13px;line-height:1.4;
+}
+.sample-data-banner i.fa-triangle-exclamation{font-size:15px;flex-shrink:0;}
+.sample-data-banner span{flex:1;color:var(--text);}
+.sample-data-banner b{color:#f5b942;}
+.sample-banner-close{
+  background:transparent;border:none;color:var(--text-dim);cursor:pointer;
+  padding:4px 8px;border-radius:6px;flex-shrink:0;
+}
+.sample-banner-close:hover{background:rgba(255,255,255,0.08);color:var(--text);}
+.sample-data-banner.hidden{display:none;}
+
 .topbar-right{display:flex;align-items:center;gap:12px;}
 .sync-pill{
   display:flex;align-items:center;gap:8px;

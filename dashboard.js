@@ -24,7 +24,23 @@
 
   const charts = {}; // registry so range/mode toggles can update in place
 
+  // ---------------------------------------------------------- sample banner
+  function initSampleDataBanner() {
+    const banner = document.getElementById('sampleDataBanner');
+    const closeBtn = document.getElementById('sampleBannerClose');
+    if (!banner || !closeBtn) return;
+    if (localStorage.getItem('nexusSampleBannerDismissed') === '1') {
+      banner.classList.add('hidden');
+      return;
+    }
+    closeBtn.addEventListener('click', () => {
+      banner.classList.add('hidden');
+      localStorage.setItem('nexusSampleBannerDismissed', '1');
+    });
+  }
+
   function boot() {
+    initSampleDataBanner();
     const data = window.DASHBOARD_DATA;
     const app = document.getElementById('app');
     if (!data) {

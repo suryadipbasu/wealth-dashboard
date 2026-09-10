@@ -11,6 +11,10 @@
 ![GitHub Pages](https://img.shields.io/badge/hosted%20on-GitHub%20Pages-222?logo=github)
 ![No backend](https://img.shields.io/badge/backend-none%20needed-brightgreen)
 
+> ⚠️ **Sample data notice**: all financial figures, balances, holdings, salaries, and names shown
+> in this repository and on the live demo are **illustrative sample/placeholder data** for
+> demonstration purposes only. They do not represent anyone's real finances.
+
 ---
 
 ## ✨ What is this?
