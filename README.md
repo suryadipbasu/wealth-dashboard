@@ -14,6 +14,17 @@
 > ⚠️ **Sample data notice**: all financial figures, balances, holdings, salaries, and names shown
 > in this repository and on the live demo are **illustrative sample/placeholder data** for
 > demonstration purposes only. They do not represent anyone's real finances.
+>
+> <img width="1899" height="919" alt="Screenshot 2026-09-10 152814" src="https://github.com/user-attachments/assets/336eb673-ddb0-4fbb-b265-25a6ec97f035" />
+> <img width="1286" height="533" alt="Screenshot 2026-09-10 152353" src="https://github.com/user-attachments/assets/fca60c47-9014-4a45-86d5-d2cad8515215" />
+> <img width="1278" height="452" alt="Screenshot 2026-09-10 152516" src="https://github.com/user-attachments/assets/7d7ceecc-7f1c-4fc8-bcaf-db5b3fc99c61" />
+> <img width="1301" height="714" alt="Screenshot 2026-09-10 152605" src="https://github.com/user-attachments/assets/17a06a7c-3997-409e-b84e-377dc27cf65a" />
+> <img width="1302" height="533" alt="Screenshot 2026-09-10 152530" src="https://github.com/user-attachments/assets/4382842a-ff5d-4b33-83e1-fdc628376256" />
+> <img width="1297" height="905" alt="Screenshot 2026-09-10 152551" src="https://github.com/user-attachments/assets/a29f74b1-48f1-4383-8396-399cd06e12aa" />
+> <img width="1296" height="804" alt="Screenshot 2026-09-10 152558" src="https://github.com/user-attachments/assets/d8687ece-7298-43a7-af8c-ca5ac7166f3b" />
+> <img width="1301" height="839" alt="Screenshot 2026-09-10 152614" src="https://github.com/user-attachments/assets/aca52f04-ff85-44f2-9fe0-644c324a96f1" />
+> <img width="1303" height="666" alt="Screenshot 2026-09-10 152619" src="https://github.com/user-attachments/assets/0afb8e8f-989c-4f6f-ace3-f5568df29473" />
+> <img width="1320" height="768" alt="Screenshot 2026-09-10 152626" src="https://github.com/user-attachments/assets/30c030db-a1c3-4284-887f-9f679868f663" />
 
 ---
 
