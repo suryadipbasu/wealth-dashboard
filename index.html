@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NEXUS Wealth // Husband &amp; Wife</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1729'/%3E%3Ctext x='32' y='45' font-family='Arial, sans-serif' font-size='38' font-weight='700' fill='%233b82f6' text-anchor='middle'%3E%E2%82%B9%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-treemap@2/dist/chartjs-chart-treemap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+<div class="ticker-tape" id="tickerTape">
+  <div class="tape-status" id="tapeStatus">
+    <span class="market-seg" id="marketSegIndia"><span class="tape-dot"></span><span class="market-seg-label">India: …</span></span>
+    <span class="market-sep">|</span>
+    <span class="market-seg" id="marketSegUs"><span class="tape-dot"></span><span class="market-seg-label">US: …</span></span>
+  </div>
+  <div class="tape-scroll-wrap">
+    <div class="tape-track" id="tapeTrack"><span class="tape-item">Loading live prices…</span></div>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="brand">
+    <i class="fa-solid fa-atom brand-icon"></i>
+    <div>
+      <div class="brand-title">NEXUS <span>WEALTH</span></div>
+      <div class="brand-sub">Household Financial Command Center</div>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <div class="live-pill" id="liveServerPill" title="Local live-data server (live_server.py / Start_Live_Server.bat)">
+      <span class="dot"></span>
+      <span id="liveServerText">Checking…</span>
+    </div>
+    <div class="sync-pill" id="syncPill">
+      <span class="dot"></span>
+      <span id="syncText">Loading…</span>
+    </div>
+    <button class="icon-btn" id="privacyToggle" title="Hide/show all numbers">
+      <i class="fa-solid fa-eye"></i>
+    </button>
+    <button class="icon-btn" id="themeToggle" title="Light / dark mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <button class="icon-btn" id="exportBtn" title="Export CSV/PDF">
+      <i class="fa-solid fa-file-export"></i>
+    </button>
+    <button class="refresh-btn" onclick="location.reload()">
+      <i class="fa-solid fa-arrows-rotate"></i> <span>Reload View</span>
+    </button>
+  </div>
+</header>
+
+<main id="app">
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loader-ring"></div>
+    <div class="loading-text">INITIALIZING WEALTH MATRIX…</div>
+  </div>
+</main>
+
+<template id="tpl-root">
+<!-- ============ NL QUERY BOX ============ -->
+<section class="panel query-panel">
+  <div class="query-box">
+    <i class="fa-solid fa-wand-magic-sparkles"></i>
+    <input type="text" id="nlQuery" placeholder="Ask e.g. 'net worth', 'drawdown', 'alpha', 'drift', 'goal', 'alerts', 'crypto'…" />
+    <button id="nlQueryBtn"><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+  <div id="nlAnswer" class="nl-answer"></div>
+</section>
+
+<!-- ============ KPI ROW ============ -->
+<section class="kpi-grid" id="kpiGrid">
+  <div class="kpi-card glow-cyan" data-kpi="networth" tabindex="0" role="button" aria-expanded="false">
+    <div class="kpi-icon"><i class="fa-solid fa-vault"></i></div>
+    <div class="kpi-label">Combined Net Worth <i class="fa-solid fa-circle-info kpi-info" title="Click for allocation breakdown"></i></div>
+    <div class="kpi-value priv-num" id="kpiNetWorth">—</div>
+    <div class="kpi-foot">Husband + Wife · live-synced</div>
+    <div class="kpi-detail" id="kpiDetailNetworth"></div>
+  </div>
+  <div class="kpi-card glow-violet" data-kpi="savings" tabindex="0" role="button" aria-expanded="false">
+    <div class="kpi-icon"><i class="fa-solid fa-seedling"></i></div>
+    <div class="kpi-label">Monthly Savings Rate <i class="fa-solid fa-circle-info kpi-info" title="Click for Husband vs Wife split"></i></div>
+    <div class="kpi-value priv-num" id="kpiSavingsRate">—</div>
+    <div class="kpi-foot priv-num" id="kpiSavingsAmt">—</div>
+    <div class="kpi-detail" id="kpiDetailSavings"></div>
+  </div>
+  <div class="kpi-card glow-amber" data-kpi="risk" tabindex="0" role="button" aria-expanded="false">
+    <div class="kpi-icon"><i class="fa-solid fa-shield-halved"></i></div>
+    <div class="kpi-label">Portfolio Risk Level <i class="fa-solid fa-circle-info kpi-info" title="Click for risk factors"></i></div>
+    <div class="kpi-value" id="kpiRisk">—</div>
+    <div class="kpi-foot" id="kpiRiskScore">—</div>
+    <div class="kpi-detail" id="kpiDetailRisk"></div>
+  </div>
+  <div class="kpi-card glow-green" data-kpi="return" tabindex="0" role="button" aria-expanded="false">
+    <div class="kpi-icon"><i class="fa-solid fa-chart-line"></i></div>
+    <div class="kpi-label">Blended Growth Assumption <i class="fa-solid fa-circle-info kpi-info" title="Click for per-asset-class assumptions"></i></div>
+    <div class="kpi-value" id="kpiReturn">—</div>
+    <div class="kpi-foot">vs inflation-adjusted baseline</div>
+    <div class="kpi-detail" id="kpiDetailReturn"></div>
+  </div>
+</section>
+
+<!-- ============ WORLD & MACRO NEWS ============ -->
+<section class="panel">
+  <div class="panel-head">
+    <h2><i class="fa-solid fa-globe"></i> World &amp; Macro-Economic News</h2>
+    <span class="panel-tag" id="newsSyncTag">syncing…</span>
+  </div>
+  <div class="news-tabs" id="newsTabs"></div>
+  <div class="news-list" id="newsList"></div>
+</section>
+
+<!-- ============ GLOBAL MARKETS & MACRO BACKDROP ============ -->
+<section class="panel">
+  <div class="panel-head">
+    <h2><i class="fa-solid fa-globe-americas"></i> Global Markets &amp; Macro Backdrop</h2>
+    <span class="panel-tag" id="macroSyncTag">indices · DXY · sector ETFs · India macro</span>
+  </div>
+  <div class="ticker-grid" id="macroGrid"></div>
+  <div class="two-col" style="margin-top:16px;">
+    <div class="macro-stat-card">
+      <div class="macro-stat-head"><i class="fa-solid fa-indian-rupee-sign"></i> India CPI Inflation (YoY)</div>
+      <div class="macro-stat-value" id="indiaCpiValue">—</div>
+      <div class="chart-wrap short"><canvas id="chartIndiaCpi"></canvas></div>
+      <div class="macro-stat-foot" id="indiaCpiFoot">World Bank Open Data</div>
+    </div>
+    <div class="macro-stat-card">
+      <div class="macro-stat-head"><i class="fa-solid fa-industry"></i> India GDP Growth — Nominal vs Real</div>
+      <div class="macro-stat-value" id="indiaGdpValue">—</div>
+      <div class="chart-wrap short"><canvas id="chartIndiaGdp"></canvas></div>
+      <div class="macro-stat-foot" id="indiaGdpFoot">World Bank Open Data</div>
+    </div>
+  </div>
+  <div class="macro-stat-card" style="margin-top:16px;">
+    <div class="macro-stat-head"><i class="fa-solid fa-money-bill-trend-up"></i> INR Depreciation vs USD</div>
+    <div class="range-toggle" id="inrRangeToggle"></div>
+    <div class="macro-stat-value" id="inrYoyValue">—</div>
+    <div class="chart-wrap short"><canvas id="chartInrTrend"></canvas></div>
+    <div class="macro-stat-foot" id="inrYoyFoot">Yahoo Finance USD/INR spot history</div>
+  </div>
+</section>
+
+<!-- ============ LIVE MARKET TICKER ============ -->
+<section class="panel">
+  <div class="panel-head">
+    <h2><i class="fa-solid fa-satellite-dish"></i> Live Market Feed</h2>
+    <span class="panel-tag" id="fxTag">USD/INR —</span>
+  </div>
+  <div class="ticker-grid" id="stockGrid"></div>
+</section>
+
+<div class="two-col">
+  <section class="panel">
+    <div class="panel-head"><h2><i class="fa-brands fa-bitcoin"></i> Crypto Assets &amp; Commodities</h2></div>
+    <div class="ticker-grid" id="cryptoGrid"></div>
+  </section>
+  <section class="panel">
+    <div class="panel-head"><h2><i class="fa-solid fa-holly-berry"></i> Top Holdings by Value</h2></div>
+    <div class="chart-wrap"><canvas id="chartTopHoldings"></canvas></div>
+  </section>
+</div>
+
+<!-- ============ WATCHLIST + MARKET INTELLIGENCE ============ -->
+<section class="panel">
+  <div class="panel-head">
+    <h2><i class="fa-solid fa-binoculars"></i> Watchlist &amp; Market Intelligence</h2>
+    <span class="panel-tag" id="deepSyncTag">Analyst · Dividends · Earnings — syncing…</span>
+  </div>
+  <div class="watchlist-filters" id="watchlistFilters">
+    <button class="wf-btn active" data-filter="all">All</button>
+    <button class="wf-btn" data-filter="held">Held</button>
+    <button class="wf-btn" data-filter="watching">Watching</button>
+    <button class="wf-btn" data-filter="etf">ETFs</button>
+  </div>
+  <div class="watchlist-grid" id="watchlistGrid"></div>
+</section>
+
+<!-- ============ INCOME / EXPENSES ============ -->
+<section class="panel">
+  <div class="panel-head">
+    <h2><i class="fa-solid fa-scale-balanced"></i> Expense &amp; Savings Detail by Person</h2>
+    <span class="panel-tag">Detail view — totals reconcile to the Cash Flow diagram above</span>
+  </div>
+  <div class="cashflow-grid">
+    <div class="cf-card">
+      <div class="cf-name"><i class="fa-solid fa-user-astronaut"></i> Husband</div>
+      <div class="cf-row"><span>Income</span><b id="sbSalary">—</b></div>
+      <div class="cf-row"><span>Living Expenses</span><b id="sbExpenses">—</b></div>
+      <div class="cf-row"><span>Savings &amp; Investments</span><b id="sbSavings">—</b></div>
+      <div class="cf-row highlight"><span>Uncommitted Cash</span><b id="sbLeftover">—</b></div>
+      <div class="cf-bar cf-bar-stacked" id="sbBarStacked"><div class="cf-bar-fill cf-seg-exp" id="sbBarExp"></div><div class="cf-bar-fill cf-seg-sav" id="sbBarSav"></div><div class="cf-bar-fill cf-seg-left" id="sbBarLeft"></div></div>
+    </div>
+    <div class="cf-card">
+      <div class="cf-name"><i class="fa-solid fa-user-nurse cf-jb"></i> Wife</div>
+      <div class="cf-row"><span>Income</span><b id="jbSalary">—</b></div>
+      <div class="cf-row"><span>Living Expenses</span><b id="jbExpenses">—</b></div>
+      <div class="cf-row"><span>Savings &amp; Investments</span><b id="jbSavings">—</b></div>
+      <div class="cf-row highlight"><span>Uncommitted Cash</span><b id="jbLeftover">—</b></div>
+      <div class="cf-bar cf-bar-stacked" id="jbBarStacked"><div class="cf-bar-fill cf-seg-exp jb" id="jbBarExp"></div><div class="cf-bar-fill cf-seg-sav jb" id="jbBarSav"></div><div class="cf-bar-fill cf-seg-left jb" id="jbBarLeft"></div></div>
+    </div>
+  </div>
+  <div class="two-col" style="margin-top:20px;">
+    <div class="chart-wrap"><canvas id="chartSbExpenses"></canvas></div>
+    <div class="chart-wrap"><canvas id="chartJbExpenses"></canvas></div>
+  </div>
+</section>
+
+<!-- ============ ALLOCATION + STOCKS ============ -->
+<div class="two-col">
+  <section class="panel">
+    <div class="panel-head">
+      <h2><i class="fa-solid fa-chart-pie"></i> Asset Allocation</h2>
+      <span class="drill-hint">click a slice to drill down</span>
+    </div>
+    <div class="chart-wrap"><canvas id="chartAllocation"></canvas></div>
+    <div id="allocDrill" class="drill-panel"></div>
+  </section>
+  <section class="panel">
+    <div class="panel-head">
+      <h2><i class="fa-solid fa-building-columns"></i> Portfolio Distribution (₹)</h2>
+    </div>
+    <div class="chart-wrap"><canvas id="chartAllocationBar"></canvas></div>
+  </section>
+</div>
+
+<!-- ============ NET WORTH TREND + DRAWDOWN ============ -->
+<section class="panel">
+  <div class="panel-head">
+    <h2><i class="fa-solid fa-arrow-trend-up"></i> Net Worth Trend vs S&amp;P 500 Benchmark</h2>
+    <div class="range-toggle" id="rangeToggle">
+      <button data-range="1M">1M</button>
+      <button data-range="3M">3M</button>
+      <button data-range="6M">6M</button>
+      <button data-range="1Y" class="active">1Y</button>
+    </div>
+  </div>
+  <div class="mode-toggle" id="modeToggle">
+    <button data-mode="value" class="active">$ Value</button>
+    <button data-mode="pct">% Change</button>
+  </div>
+  <div class="chart-wrap tall"><canvas id="chartTrend"></canvas></div>
+  <div class="panel-sub">Portfolio value approximated from currently-held tickers only (qty-weighted); historical FX is approximated using today's USD/INR rate.</div>
+  <div class="panel-head" style="margin-top:20px;">
+    <h2><i class="fa-solid fa-water"></i> Drawdown (Peak-to-Trough)</h2>
+  </div>
+  <div class="chart-wrap"><canvas id="chartDrawdown"></canvas></div>
+</section>
+
+<!-- ============ ALPHA + RISK/RETURN ============ -->
+<div class="two-col">
+  <section class="panel">
+    <div class="panel-head"><h2><i class="fa-solid fa-bolt-lightning"></i> Alpha vs Benchmark</h2></div>
+    <div class="chart-wrap"><canvas id="chartAlpha"></canvas></div>
+  </section>
+  <section class="panel">
+    <div class="panel-head"><h2><i class="fa-solid fa-circle-nodes"></i> Risk vs Return (bubble = weight)</h2></div>
+    <div class="chart-wrap"><canvas id="chartRiskReturn"></canvas></div>
+  </section>
+</div>
+
+<!-- ============ TREEMAP + DRIFT ============ -->
+<div class="two-col">
+  <section class="panel">
+    <div class="panel-head"><h2><i class="fa-solid fa-table-cells-large"></i> Sector / Geography Exposure</h2></div>
+    <div class="chart-wrap"><canvas id="chartTreemap"></canvas></div>
+  </section>
+  <section class="panel">
+    <div class="panel-head"><h2><i class="fa-solid fa-scale-unbalanced"></i> Portfolio Drift vs Target</h2></div>
+    <div class="chart-wrap"><canvas id="chartDrift"></canvas></div>
+  </section>
+</div>
+
+<!-- ============ GOALS ============ -->
+<section class="panel">
+  <div class="panel-head">
+    <h2><i class="fa-solid fa-bullseye"></i> Goal Tracking</h2>
+  </div>
+  <div id="goalsGrid" class="goals-grid"></div>
+</section>
+
+<!-- ============ PROJECTIONS ============ -->
+<section class="panel">
+  <div class="panel-head">
+    <h2><i class="fa-solid fa-timeline"></i> Wealth Projection Horizon</h2>
+    <span class="panel-tag">1 · 3 · 5 · 10 · 15 · 20 · 25 · 30 YEARS</span>
+  </div>
+  <div class="panel-sub">Today's purchasing power (inflation-adjusted) · three strategies compared</div>
+  <div class="chart-wrap tall"><canvas id="chartProjection"></canvas></div>
+  <div class="legend-note">
+    <div><span class="dot dot-1"></span> Savings only (no investment growth) − inflation</div>
+    <div><span class="dot dot-2"></span> Savings + optimistic market growth − inflation</div>
+    <div><span class="dot dot-3"></span> Savings +10% YoY escalation + market growth − inflation</div>
+  </div>
+  <div class="whatif-panel">
+    <div class="whatif-head"><i class="fa-solid fa-sliders"></i> What-if Scenario Sliders <span class="tag-live">live recompute</span></div>
+    <div class="whatif-grid">
+      <div class="whatif-item">
+        <label>Monthly savings rate change <span id="wiSavingsVal">+0%</span></label>
+        <input type="range" id="wiSavings" min="-50" max="50" value="0" step="5">
+      </div>
+      <div class="whatif-item">
+        <label>Expected return adj. <span id="wiReturnVal">+0.0pt</span></label>
+        <input type="range" id="wiReturn" min="-5" max="5" value="0" step="0.5">
+      </div>
+      <div class="whatif-item">
+        <label>Inflation assumption <span id="wiInflationVal">6.0%</span></label>
+        <input type="range" id="wiInflation" min="2" max="12" value="6" step="0.5">
+      </div>
+      <div class="whatif-item">
+        <label>Retirement age (years from now) <span id="wiYearsVal">30y</span></label>
+        <input type="range" id="wiYears" min="5" max="40" value="30" step="1">
+      </div>
+    </div>
+    <div class="whatif-result" id="wiResult"></div>
+  </div>
+</section>
+
+<!-- ============ CASH FLOW SANKEY + CONTRIBUTIONS ============ -->
+<section class="panel">
+  <div class="panel-head"><h2><i class="fa-solid fa-diagram-project"></i> Household Cash Flow (Income → Allocation)</h2><span class="panel-tag">Single source of truth — living expenses + savings/investments = total income</span></div>
+  <div id="cashFlowDiagram" class="flow-diagram"></div>
+</section>
+<section class="panel">
+  <div class="panel-head"><h2><i class="fa-solid fa-layer-group"></i> Contributions Forecast (next 12 months)</h2></div>
+  <div class="chart-wrap"><canvas id="chartContributions"></canvas></div>
+</section>
+
+<!-- ============ SMART ALERTS ============ -->
+<section class="panel">
+  <div class="panel-head">
+    <h2><i class="fa-solid fa-bell"></i> Smart Alerts</h2>
+    <span class="panel-tag">rebalancing · concentration · milestones</span>
+  </div>
+  <div id="alertsList" class="alerts-list"></div>
+</section>
+
+<!-- ============ INSIGHTS ============ -->
+<section class="panel insights-panel">
+  <div class="panel-head">
+    <h2><i class="fa-solid fa-brain"></i> AI Wealth Insights &amp; Suggestions</h2>
+  </div>
+  <div id="insightsList" class="insights-list"></div>
+  <div class="risk-factors" id="riskFactors"></div>
+</section>
+
+<footer class="footer">
+  <span>Data as of <b id="lastRefreshed">—</b></span>
+  <details class="datasource-details">
+    <summary>Data sources</summary>
+    <p>Prices from public market-data feeds; workbook figures from <code>Datasource/Savings_And_Expense_Tracker.xlsx</code>. Refreshed automatically when the local sync service runs, or on demand.</p>
+  </details>
+  <span id="dataSourceNote" class="datasource-note"></span>
+</footer>
+</template>
+
+<script src="data.js" onerror="window.__NO_DATA__=true"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>
