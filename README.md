@@ -1,44 +1,184 @@
-# NEXUS Wealth Dashboard
+# 🌌 NEXUS Wealth Dashboard
 
-A futuristic, self-contained wealth dashboard generated from `Datasource/Savings_And_Expense_Tracker.xlsx`
-(Savings, Wealth Projection, Fixed Expenses, Husband_Expenses, Wife_Expenses sheets), enriched with
-**live stock, ETF, and crypto prices** pulled from free public APIs.
+> A futuristic, self-contained household wealth dashboard — built from a single Excel workbook,
+> enriched with **live stock, ETF, crypto, and macro-economic data** pulled from free public APIs.
+> No database. No paid backend. Just an Excel sheet, a Python script, and a static webpage.
 
-## Files
+🔗 **Live demo**: https://suryadipbasu.github.io/wealth-dashboard/
+
+![Made with Python](https://img.shields.io/badge/data%20pipeline-Python-3776AB?logo=python&logoColor=white)
+![Chart.js](https://img.shields.io/badge/charts-Chart.js-FF6384?logo=chartdotjs&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/hosted%20on-GitHub%20Pages-222?logo=github)
+![No backend](https://img.shields.io/badge/backend-none%20needed-brightgreen)
+
+---
+
+## ✨ What is this?
+
+You fill in your money details in one Excel file. A Python script reads it, mixes in live market
+prices, and spits out a JSON file. A static webpage reads that JSON and renders a full financial
+command-center: net worth, savings rate, 30-year wealth projections, portfolio risk, asset
+allocation, cash flow, and more — all with a glowing, sci-fi-dashboard aesthetic. 🚀
+
+## 🧭 How it all works (the 30-second version)
+
+```
+📊 Datasource/Savings_And_Expense_Tracker.xlsx   (you fill this in)
+          │
+          ▼
+🐍 refresh_data.py   → reads the Excel + calls free stock/crypto/macro APIs
+          │
+          ▼
+🗂️ data.json / data.js   (generated snapshot, no manual editing needed)
+          │
+          ▼
+🖥️ index.html + dashboard.js + style.css   → the dashboard you actually look at
+```
+
+There are **three ways to keep prices fresh**, all already wired up:
+
+| Mode | How | Best for |
+|---|---|---|
+| 🔁 **Manual refresh** | Run `Refresh_Data.bat` whenever you want new numbers | Running locally on your own PC |
+| ⏱️ **Auto-refresh (GitHub Actions)** | `.github/workflows/refresh-data.yml` re-runs `refresh_data.py` every 15 min and commits the new `data.json` | Once deployed to GitHub Pages — fully hands-off, this is what keeps the live demo above from going stale |
+| 📡 **Live ticker tape (local only)** | `Start_Live_Server.bat` runs a tiny local server so the scrolling ticker updates every 60s while the dashboard is open on *that same machine* | Local use, live price-watching |
+
+> ⚠️ **Important**: the "Live Server" (`live_server.py`, port `8787`) only exists on a machine
+> that is actually running it — it is **not** something a deployed GitHub Pages site can offer,
+> because Pages only serves static files with no backend at all. On the deployed site, the
+> dashboard instead shows an **"Auto-Refreshed"** pill and pulls straight from `data.json`, which
+> the GitHub Actions workflow above keeps updated every 15 minutes automatically — you don't need
+> to do anything for that to keep working.
+
+## 📁 File map
 
 | File | Purpose |
 |---|---|
-| `refresh_data.py` | Reads the Excel workbook + pulls live market data → writes `data.js` / `data.json` |
-| `Refresh_Data.bat` | Double-click shortcut to run `refresh_data.py` on Windows |
-| `index.html` | The dashboard UI (open directly in any browser, no server needed) |
-| `Open_Dashboard.bat` | Double-click shortcut to open `index.html` |
-| `style.css` / `dashboard.js` | Dashboard styling & rendering logic |
-| `data.js` / `data.json` | Generated data snapshot (created/overwritten by refresh) |
-| `live_server.py` | Optional local server for a truly *live* ticker tape + market intel (see below) |
-| `Start_Live_Server.bat` | Double-click shortcut to run `live_server.py` |
-| `Datasource/Savings_And_Expense_Tracker.xlsx` | Source workbook (Savings, Wealth Projection, Fixed Expenses, Husband_Expenses, Wife_Expenses) |
+| `Datasource/Savings_And_Expense_Tracker.xlsx` | 📊 **The only file you need to edit.** Your savings, expenses, and projections. |
+| `refresh_data.py` | 🐍 Reads the Excel + pulls live market data → writes `data.js` / `data.json`. |
+| `Refresh_Data.bat` | 🖱️ Double-click shortcut (Windows) to run `refresh_data.py`. |
+| `index.html` | 🖥️ The dashboard itself — open directly in any browser, no server required. |
+| `Open_Dashboard.bat` | 🖱️ Double-click shortcut to open `index.html`. |
+| `style.css` / `dashboard.js` | 🎨 Dashboard styling & chart-rendering logic. |
+| `data.js` / `data.json` | 📦 Generated snapshot — **don't edit by hand**, it gets overwritten every refresh. |
+| `live_server.py` / `Start_Live_Server.bat` | 📡 Optional local server for a truly live ticker tape (local use only, see table above). |
+| `.github/workflows/refresh-data.yml` | 🤖 GitHub Actions workflow that auto-refreshes data every 15 min once deployed. |
 
-## How to use
+---
 
-1. **Refresh data**: double-click `Refresh_Data.bat` (or run `python refresh_data.py`).
-   This pulls:
-   - Live prices for all 24 stock/ETF tickers (MSFT, GOOGL, AAPL, AMZN, META, VOO, QQQ, etc.)
-     from Yahoo Finance's public chart API (no key/auth required).
-   - Live BTC & ETH prices from CoinGecko's public API.
-   - Live USD/INR exchange rate.
-   - The latest holdings, expenses, savings, and formulas from
-     `Datasource/Savings_And_Expense_Tracker.xlsx`.
-2. **View dashboard**: double-click `Open_Dashboard.bat` (or open `index.html` in a browser).
-3. **Optional — go fully live**: double-click `Start_Live_Server.bat` and leave the console
-   window open. This starts a tiny local server on `http://localhost:8787` that the dashboard
-   automatically detects and polls for the scrolling ticker tape (prices every 60s) and the
-   Watchlist/Market-News panels (analyst ratings, dividends, earnings, macro news every 20 min).
-   Without it running, those sections still work off a static one-time snapshot from your last
-   `Refresh_Data.bat` run and clearly label themselves "offline"/"static snapshot".
+## 🚀 Quick start (just want to see it running locally?)
 
-Re-run step 1 any time you want fresh Excel numbers, then reload the browser tab.
+1. Open the workbook — `Datasource/Savings_And_Expense_Tracker.xlsx` — already has sample data in it.
+2. Double-click `Refresh_Data.bat` and wait for it to finish (a few minutes the first time).
+3. Double-click `Open_Dashboard.bat`. That's it. 🎉
 
-## What's on the dashboard
+---
+
+## 🛠️ Setting this up with **your own** financial data (from scratch)
+
+The dashboard is only as good as the numbers in the Excel workbook. Here's exactly what to fill
+in, sheet by sheet. **Rule of thumb**: type over the *values*, don't touch cells that already
+contain a formula (anything starting with `=`) — those calculate themselves.
+
+### 1️⃣ `Savings` sheet — everything you own
+
+This is your net-worth ledger. Each row is one holding.
+
+| Section | What to put | Example |
+|---|---|---|
+| **Savings Bank MIN BAL A/C** | Your bank names + minimum balance you keep in each | `HDFC` → `F` column = ₹5,000 |
+| **Fixed Deposits** | One row per FD: ROI %, inception/maturity date, maturity amount, current value | `HDFC (Emergency Fund)` → 7.25% |
+| **Pension Funds** | EPF / NPS balances | `Employee Provident Fund` → current balance |
+| **Debt Funds** | PPF and similar | `Public Provident Fund` → current balance |
+| **Equity - MF/ELSS** | Mutual funds — name + current value (column `F`) | `Nifty50 Index Fund` |
+| **Equity - Indian Stocks & US ETFs** | 🟢 **This is the important one** — one row per stock/ETF you hold, prefixed `NASDAQ:` | see below 👇 |
+| **Crypto Assets** | Bitcoin, Ethereum, or any exchange wallet balance | `Bitcoin (BTC)` → quantity in column `E` |
+
+**Adding/removing a stock or ETF holding:**
+- Each stock row only needs column `E` (quantity you hold) filled in — the price is fetched live.
+- If a row's quantity (`E`) is `0`, the dashboard just treats it as "not currently held" (handy for
+  tickers you're watching but haven't bought yet).
+- To track a **new** ticker that isn't already a row: add a new row under "Equity - Indian Stocks
+  & US ETFs" with the ticker name in column `A` (e.g. `NASDAQ: TSLA`), then open
+  `refresh_data.py` and add one line to the `HOLDING_ROWS` dictionary (near the top of the file)
+  mapping your new row number → `(ticker, "E<row>", None)`. Search for `HOLDING_ROWS = {` to find it.
+- To remove a holding you no longer own, just set its quantity (`E`) to `0` — no need to delete
+  the row.
+
+> 💡 The workbook uses Excel's built-in **Stocks data type** (`A64:A90`) purely as a visual
+> "live card" inside Excel itself — the dashboard does **not** depend on it and fetches its own
+> live prices independently via `refresh_data.py`. You can leave that block alone.
+
+### 2️⃣ `Wealth Projection` sheet — your monthly savings breakdown
+
+Two blocks, one for each partner (`HUSBAND` / `WIFE`):
+
+| Cell | Meaning |
+|---|---|
+| `B2:B8` (or `B12:B16`) | Monthly amount going into each instrument (Mutual Fund, PPF, Crypto, US Equity, RD, Gold, NPS) |
+| `C9` (or `C17`) `Monthly Total Savings` | Auto-sums the column above — leave as formula |
+
+Just update the ₹ amount you invest monthly per instrument. This total automatically feeds the
+"Household Cash Flow" and "Wealth Projection Horizon" charts on the dashboard.
+
+### 3️⃣ `Fixed Expenses` sheet — recurring deductions (insurance, RDs, taxes)
+
+One row per fixed/recurring outgoing (car insurance, term insurance, annual health check-up, ITR
+filing fees, etc.). Fill in `Amount`, `RD Amount Deducted per month`, and due dates. Column `I2`
+(`Total Deductions per month`) sums it up automatically — this feeds both partners' expense
+sheets.
+
+### 4️⃣ `Husband_Expenses` / `Wife_Expenses` sheets — monthly budget per person
+
+Both sheets follow the same pattern:
+
+| Row type | What it means |
+|---|---|
+| Rows under **"Necessary Expenses"** | Rent, groceries, utilities, food, clothes — your actual monthly spend |
+| Rows under **"Fixed Expenses"** | Insurance/maintenance pulled in from the `Fixed Expenses` sheet |
+| Row under **"Savings"** (e.g. `Savings per month`) | Auto-pulled from the `Wealth Projection` sheet — leave as formula |
+| Rows under **"Travel Expenses"** | Flights, cabs — recurring or occasional travel spend |
+| Rows under **"Miscellaneous Expenses"** | Personal spending, unexpected buffer, family contributions |
+| **`Net Average Salary`** row (near the bottom) | 🟢 **Type your actual monthly take-home salary here** |
+| **`Total Utilization`** / **`Leftover Salary`** rows | Auto-calculated — leave as formulas |
+
+> ⚠️ If you add or remove rows in these two sheets, the row numbers for `Net Average Salary`,
+> `Total Utilization`, and `Leftover Salary` will shift. Open `refresh_data.py`, search for
+> `sb_salary = safe_num(get_cell(sb, "B29"))` (and the 5 lines around it), and update the cell
+> references to match your new row numbers.
+
+### 5️⃣ Tweak the assumptions (optional)
+
+Near the top of `refresh_data.py`:
+- `ASSET_RETURNS` — expected long-term annual return assumption per asset class.
+- `ASSET_VOLATILITY` — used for the risk score.
+- `TARGET_ALLOCATION` — your ideal portfolio mix, used for the drift chart.
+- Inflation assumption (6% by default, long-run India CPI) — search for `INFLATION`.
+
+### 6️⃣ Refresh and view
+
+Run `Refresh_Data.bat`, then open `index.html` (or `Open_Dashboard.bat`). Repeat step 6 any time
+your numbers change.
+
+---
+
+## 🌐 Deploying your own copy to GitHub Pages
+
+1. Push this folder to a new GitHub repo of your own (public repos get free GitHub Pages hosting).
+2. In the repo settings → **Pages**, set source to the `main` branch, root folder (`/`).
+3. The included `.github/workflows/refresh-data.yml` workflow will automatically re-run
+   `refresh_data.py` every 15 minutes and commit the refreshed `data.json`/`data.js` — no server
+   needed, GitHub's free Actions minutes handle it.
+4. Your dashboard is now live at `https://<your-username>.github.io/<repo-name>/`. 🎉
+
+> Note: the optional `live_server.py` / 60-second ticker tape only works when running locally —
+> GitHub Pages can't run a Python backend. On Pages, the dashboard automatically detects it isn't
+> on `localhost` and skips trying to reach a live server at all, instead showing an
+> **"Auto-Refreshed"** pill sourced from `data.json`'s own timestamp. This is expected, not a bug.
+
+---
+
+## 🪄 What's on the dashboard
 
 - **KPI strip**: combined net worth, monthly savings rate, portfolio risk score, blended
   growth assumption. (Click the 👁 icon top-right to blur all numeric values for privacy.)
@@ -88,7 +228,7 @@ Re-run step 1 any time you want fresh Excel numbers, then reload the browser tab
   mini sparkline + 52-week range + analyst/dividend/earnings chips (for held names that are also
   on the watchlist data set).
 
-## Live data sources & redundancy
+## 🔌 Live data sources & redundancy
 
 `refresh_data.py` now tries multiple free, unauthenticated public APIs with automatic fallback,
 so a single provider outage/rate-limit doesn't break a refresh:
@@ -102,7 +242,7 @@ so a single provider outage/rate-limit doesn't break a refresh:
   unauthenticated for quotes, but returned a bot-check/Cloudflare challenge page in testing
   rather than data, so it wasn't reliable enough to include as a fallback.
 
-## Out of scope (and why)
+## 🧱 Out of scope (and why)
 
 A few of the requested "premium wealth-dashboard" features aren't implemented because this is a
 static, local, single-user HTML file with no backend/server/database — they'd require
@@ -123,7 +263,7 @@ infrastructure genuinely beyond that scope:
   responsive (usable on mobile), but drag/resize widget rearrangement wasn't built — the
   additional complexity/testing surface wasn't judged worth it for a single-user local tool.
 
-## Live server & market intelligence details
+## 📡 Live server & market intelligence details
 
 `Start_Live_Server.bat` runs `live_server.py`, a stdlib-only local HTTP server (no extra installs)
 that re-uses `refresh_data.py`'s fetch functions server-side (to sidestep the fact that Yahoo
@@ -150,7 +290,7 @@ directly). It exposes:
   analyst/dividend/earnings lookups. This is a one-time manual step, not something you need to
   run often.
 
-## Notes on data sources
+## 📝 Notes on data sources
 
 - **Excel "Live" stock cells** (`_FV` linked data-type cells) can't be read directly by Python
   libraries — they're Excel's native Stocks data type. The underlying tickers were reverse

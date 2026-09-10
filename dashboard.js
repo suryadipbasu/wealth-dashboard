@@ -921,6 +921,12 @@
 
   // ------------------------------------------------------------- ticker tape
   const LIVE_SERVER = 'http://localhost:8787';
+  // localhost:8787 only ever exists on the machine actually running
+  // live_server.py. On a deployed site (e.g. GitHub Pages) every visitor's
+  // browser would otherwise try to poll their OWN localhost, which can never
+  // succeed and is meaningless — skip the attempt entirely there and show an
+  // accurate "auto-refreshed" status instead of a false "offline" alarm.
+  const IS_LOCAL_HOST = ['localhost', '127.0.0.1', ''].includes(location.hostname);
   const MARKET_STATUS_META = {
     'open': { cls: 'status-open', label: 'Online' },
     'pre-market': { cls: 'status-pre', label: 'Online (Pre-Market)' },
@@ -973,7 +979,23 @@
   }
 
   let _liveServerPillState = null;
-  function setLiveServerPill(online) {
+  function setLiveServerPill(online, generatedAt) {
+    if (!IS_LOCAL_HOST) {
+      // Deployed (e.g. GitHub Pages): there's no local live_server.py to speak
+      // of. Show a truthful "auto-refreshed" pill driven by data.json's own
+      // timestamp (kept fresh every 30 min by the GitHub Actions workflow)
+      // instead of a scary/irrelevant "Live Server: Offline".
+      if (_liveServerPillState === 'auto') return;
+      _liveServerPillState = 'auto';
+      const el = document.getElementById('liveServerPill');
+      const text = document.getElementById('liveServerText');
+      if (!el || !text) return;
+      el.className = 'live-pill online';
+      const when = generatedAt ? new Date(generatedAt).toLocaleString() : 'recently';
+      text.textContent = 'Auto-Refreshed';
+      el.title = `Data is refreshed automatically every 30 minutes by a GitHub Actions workflow. Last refresh: ${when}.`;
+      return;
+    }
     if (_liveServerPillState === online) return; // avoid needless re-render/flicker
     _liveServerPillState = online;
     const el = document.getElementById('liveServerPill');
@@ -1011,6 +1033,15 @@
 
   function initTickerTape(data) {
     let liveOk = false;
+    if (!IS_LOCAL_HOST) {
+      // Deployed: no local server to poll. Render straight from the
+      // GitHub-Actions-refreshed data.json snapshot and mark market status
+      // from the same snapshot (still accurate to within the last refresh).
+      staticTapeFallback(data);
+      setTapeStatus(data.marketStatus, !!data.marketStatus);
+      setLiveServerPill(true, data.generatedAt);
+      return;
+    }
     async function pollTape() {
       try {
         const res = await fetch(`${LIVE_SERVER}/api/tape.json`, { cache: 'no-store' });
@@ -1136,26 +1167,29 @@
 
   function initDeepData(data) {
     async function pollDeep() {
-      try {
-        const res = await fetch(`${LIVE_SERVER}/api/deep.json`, { cache: 'no-store' });
-        if (!res.ok) throw new Error('bad response');
-        const json = await res.json();
-        if (json && json.watchlist && json.watchlist.length) {
-          renderWatchlist(json.watchlist, data.watchlistHistory);
-          renderNews(json.macroNews);
-          document.getElementById('deepSyncTag').textContent = `Synced ${new Date(json.generatedAt).toLocaleTimeString()}`;
-          document.getElementById('newsSyncTag').textContent = `Synced ${new Date(json.generatedAt).toLocaleTimeString()}`;
-          return;
-        }
-      } catch (e) { /* fall through to static data.json snapshot below */ }
-      // fallback: static snapshot from the last full refresh_data.py run
+      if (IS_LOCAL_HOST) {
+        try {
+          const res = await fetch(`${LIVE_SERVER}/api/deep.json`, { cache: 'no-store' });
+          if (!res.ok) throw new Error('bad response');
+          const json = await res.json();
+          if (json && json.watchlist && json.watchlist.length) {
+            renderWatchlist(json.watchlist, data.watchlistHistory);
+            renderNews(json.macroNews);
+            document.getElementById('deepSyncTag').textContent = `Synced ${new Date(json.generatedAt).toLocaleTimeString()}`;
+            document.getElementById('newsSyncTag').textContent = `Synced ${new Date(json.generatedAt).toLocaleTimeString()}`;
+            return;
+          }
+        } catch (e) { /* fall through to static data.json snapshot below */ }
+      }
+      // Deployed site, or local live server unreachable: use the last
+      // GitHub-Actions-refreshed (or manually refreshed) data.json snapshot.
       if (data.watchlist && data.watchlist.length) {
         renderWatchlist(data.watchlist, data.watchlistHistory);
-        document.getElementById('deepSyncTag').textContent = `Static snapshot (${new Date(data.generatedAt).toLocaleString()})`;
+        document.getElementById('deepSyncTag').textContent = `${IS_LOCAL_HOST ? 'Static snapshot' : 'Auto-refreshed'} (${new Date(data.generatedAt).toLocaleString()})`;
       }
       if (data.macroNews) {
         renderNews(data.macroNews);
-        document.getElementById('newsSyncTag').textContent = `Static snapshot (${new Date(data.generatedAt).toLocaleString()})`;
+        document.getElementById('newsSyncTag').textContent = `${IS_LOCAL_HOST ? 'Static snapshot' : 'Auto-refreshed'} (${new Date(data.generatedAt).toLocaleString()})`;
       }
     }
     pollDeep();
