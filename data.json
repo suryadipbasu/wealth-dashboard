@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T14:16:47",
+  "generatedAt": "2026-09-20T17:39:10",
   "fx": {
     "usdinr": 95.863
   },
@@ -538,18 +538,18 @@
     {
       "symbol": "BTC",
       "qty": 0.10811828,
-      "priceUsd": 80563,
-      "changePct": -0.009774495304186274,
-      "valueInr": 834998.6515775853,
+      "priceUsd": 81258,
+      "changePct": -0.002541343722521463,
+      "valueInr": 842202.0087371551,
       "low52": 58566.09,
       "high52": 124739.81
     },
     {
       "symbol": "ETH",
       "qty": 0.96192,
-      "priceUsd": 2580.58,
-      "changePct": -0.02157579387067112,
-      "valueInr": 237961.8286282368,
+      "priceUsd": 2626.48,
+      "changePct": -0.006477884621998982,
+      "valueInr": 242194.3840747008,
       "low52": 1566.01,
       "high52": 4690.84
     }
@@ -591,13 +591,13 @@
     "debt": 2908574.0,
     "indianEquity": 1195000.0,
     "foreignEquity": 8978662.7882,
-    "crypto": 1072960.480205822
+    "crypto": 1084396.392811856
   },
   "netWorth": {
-    "husband": 15679079.958405823,
-    "husbandExPensionEmergency": 14155197.268405823,
+    "husband": 15690515.871011855,
+    "husbandExPensionEmergency": 14166633.181011856,
     "wifeCached": 2094570.9164794413,
-    "combined": 17773650.874885265
+    "combined": 17785086.787491295
   },
   "monthlySavings": {
     "sb": 257500.0,
@@ -751,7 +751,7 @@
   "assumptions": {
     "inflation": 0.06,
     "savingsGrowthYoY": 0.1,
-    "blendedPortfolioReturn": 0.10565567557457614,
+    "blendedPortfolioReturn": 0.10572443771457678,
     "assetReturns": {
       "emergency": 0.035,
       "pension": 0.085,
@@ -774,104 +774,104 @@
     ],
     "scenario1": [
       {
-        "nominal": 21397650.874885265,
-        "real": 20186463.0895144
+        "nominal": 21409086.787491295,
+        "real": 20197251.68631254
       },
       {
-        "nominal": 28645650.874885265,
-        "real": 24051440.849564794
+        "nominal": 28657086.787491295,
+        "real": 24061042.66230789
       },
       {
-        "nominal": 35893650.87488526,
-        "real": 26821823.97025891
+        "nominal": 35905086.78749129,
+        "real": 26830369.549417946
       },
       {
-        "nominal": 54013650.87488526,
-        "real": 30160940.530652616
+        "nominal": 54025086.78749129,
+        "real": 30167326.28452108
       },
       {
-        "nominal": 72133650.87488526,
-        "real": 30098852.213385273
+        "nominal": 72145086.78749129,
+        "real": 30103624.020153396
       },
       {
-        "nominal": 90253650.87488526,
-        "real": 28141514.9615156
+        "nominal": 90265086.78749129,
+        "real": 28145080.733122416
       },
       {
-        "nominal": 108373650.87488526,
-        "real": 25250912.236555535
+        "nominal": 108385086.78749129,
+        "real": 25253576.788531303
       },
       {
-        "nominal": 126493650.87488526,
-        "real": 22023826.113190345
+        "nominal": 126505086.78749129,
+        "real": 22025817.221431263
       }
     ],
     "scenario2": [
       {
-        "nominal": 23549946.26056417,
-        "real": 22216930.4344945
+        "nominal": 23564118.60854411,
+        "real": 22230300.57409822
       },
       {
-        "nominal": 37095822.61777951,
-        "real": 31146367.989833474
+        "nominal": 37117822.10139507,
+        "real": 31164839.180493854
       },
       {
-        "nominal": 53813533.48998617,
-        "real": 40212602.711193435
+        "nominal": 53847473.36308192,
+        "real": 40237964.558750264
       },
       {
-        "nominal": 114796370.53455567,
-        "real": 64101693.71530843
+        "nominal": 114889189.22705749,
+        "real": 64153523.18840153
       },
       {
-        "nominal": 217985008.90282482,
-        "real": 90957527.97927454
+        "nominal": 218212663.61242688,
+        "real": 91052520.33550337
       },
       {
-        "nominal": 392589792.8769678,
-        "real": 122411353.14626734
+        "nominal": 393105197.4798192,
+        "real": 122572058.73769525
       },
       {
-        "nominal": 688037344.7465153,
-        "real": 160311759.0614745
+        "nominal": 689140523.28075,
+        "real": 160568798.14915252
       },
       {
-        "nominal": 1187962111.5194314,
-        "real": 206836238.75352174
+        "nominal": 1190230605.1964922,
+        "real": 207231206.48460475
       }
     ],
     "scenario3": [
       {
-        "nominal": 23549946.26056417,
-        "real": 22216930.4344945
+        "nominal": 23564118.608544108,
+        "real": 22230300.574098215
       },
       {
-        "nominal": 38317498.806715444,
-        "real": 32172110.875685498
+        "nominal": 38339565.99459205,
+        "real": 32190638.912148993
       },
       {
-        "nominal": 58486122.625503436,
-        "real": 43704233.13115385
+        "nominal": 58520547.74342385,
+        "real": 43729957.58187176
       },
       {
-        "nominal": 144720890.16295186,
-        "real": 80811389.17749877
+        "nominal": 144820650.98689178,
+        "real": 80867095.10052758
       },
       {
-        "nominal": 318573206.4411602,
-        "real": 132929468.3343866
+        "nominal": 318838033.10686314,
+        "real": 133039971.24913552
       },
       {
-        "nominal": 657737206.9004383,
-        "real": 205085570.16040707
+        "nominal": 658389336.7292691,
+        "real": 205288907.32357994
       },
       {
-        "nominal": 1304090627.1821897,
-        "real": 303851330.18641603
+        "nominal": 1305606239.1455584,
+        "real": 304204465.69825625
       },
       {
-        "nominal": 2514472475.598197,
-        "real": 437795131.8975888
+        "nominal": 2517842262.8275557,
+        "real": 438381845.99323344
       }
     ]
   },
@@ -879,16 +879,16 @@
     "score": 55,
     "level": "High",
     "factors": [
-      "High equity/crypto exposure (71.7%) \u2014 strong growth potential but higher volatility.",
-      "Crypto allocation is 6.8% \u2014 highly volatile asset class.",
-      "Foreign currency exposure is 57.3% of Husband's tracked portfolio \u2014 sensitive to USD/INR fluctuations."
+      "High equity/crypto exposure (71.8%) \u2014 strong growth potential but higher volatility.",
+      "Crypto allocation is 6.9% \u2014 highly volatile asset class.",
+      "Foreign currency exposure is 57.2% of Husband's tracked portfolio \u2014 sensitive to USD/INR fluctuations."
     ]
   },
   "insights": [
-    "Combined household net worth is ~\u20b917,773,651, growing by ~\u20b9302,000/month.",
-    "Foreign equity is 57.3% of Husband's tracked portfolio, mostly MSFT stock/ESPP/ESOP.",
+    "Combined household net worth is ~\u20b917,785,087, growing by ~\u20b9302,000/month.",
+    "Foreign equity is 57.2% of Husband's tracked portfolio, mostly MSFT stock/ESPP/ESOP.",
     "Household savings rate is 57.0% of combined income \u2014 excellent.",
-    "At a blended optimistic portfolio return of 10.6% (vs 6% inflation), disciplined investing plus a 10% YoY savings step-up could grow real net worth to ~\u20b9437,795,132 in 30 years (today's money).",
+    "At a blended optimistic portfolio return of 10.6% (vs 6% inflation), disciplined investing plus a 10% YoY savings step-up could grow real net worth to ~\u20b9438,381,846 in 30 years (today's money).",
     "Emergency fund covers ~4.6 months of household living expenses \u2014 consider topping up toward the standard 6-month cushion."
   ],
   "history": {
@@ -9786,7 +9786,7 @@
         76371.36,
         80873.58,
         81236.41,
-        80574.75
+        81251.94
       ]
     },
     "ETH": {
@@ -10524,7 +10524,7 @@
         2446.14,
         2611.56,
         2632.01,
-        2581.7
+        2624.62
       ]
     }
   },
@@ -12051,12 +12051,12 @@
   "marketStatus": {
     "status": "closed",
     "label": "Market Closed (Weekend)",
-    "etTime": "2026-09-20 10:15 ET",
-    "istTime": "2026-09-20 19:45 IST",
+    "etTime": "2026-09-20 13:37 ET",
+    "istTime": "2026-09-20 23:07 IST",
     "india": {
       "status": "closed",
       "label": "Offline (Weekend)",
-      "istTime": "2026-09-20 19:45 IST"
+      "istTime": "2026-09-20 23:07 IST"
     }
   },
   "watchlist": [
@@ -36259,7 +36259,7 @@
       "ticker": "US30",
       "name": "Dow Jones Industrial Avg",
       "price": 51682.64,
-      "changePct": -0.001842479939372009,
+      "changePct": -0.001841708833867677,
       "low52": 45057.28,
       "high52": 54744.33
     },
@@ -36283,7 +36283,7 @@
       "ticker": "BANKNIFTY",
       "name": "Bank Nifty",
       "price": 56358.7,
-      "changePct": 0.005404441114426211,
+      "changePct": 0.005403544325475583,
       "low52": 49954.85,
       "high52": 61764.85
     },
@@ -42104,16 +42104,16 @@
         "source": "Federal Reserve (.gov)"
       },
       {
-        "title": "Stock Market Investors Just Got Bad News From the Federal Reserve. History Says This Will Happen Next. - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNVFmTDEyZGdmOW9nNl9ra0tsc2dOTmNiSkNvZXBjSFR6bUVHTjBRS1ljVjBHZndyNjRMUWJHdXVGeHh1Z3JmVXIxQlNBbEV2T0NLVEFua1ltLTJwT1BwdGFvUElGUjQ2TDZlVU5NX2ZnT1ZTTDJ1WmpBWGt3Ym0xR0hPOHd6RzFyYkRxTnQyMXZobExpamhpakZZZHA?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 09:08:01 GMT",
-        "source": "Yahoo Finance"
-      },
-      {
         "title": "Federal Reserve hikes key rate for 1st time in 3 years, defying Trump demands for a cut - AP News",
         "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVlB2TmNqY1dILUtfRTFBQ0JPSk53elRnU1QzdmhIQ3VvTWlkelRTd3haWHJ4bmxiY2ZOcGhvd09wMTllVkVLQzk5NkdKZzNPeHpaZTRHQ242Ynd2Q1ZIUU50cUp1N2JYd1lCQndZQlhMUTZFekFZWWNueUxNbmRiUHdBZ2dWbDgzNlhmejZneHptaFhGbDI1M0JPbk8zZw?oc=5",
         "pubDate": "Wed, 16 Sep 2026 23:42:00 GMT",
         "source": "AP News"
+      },
+      {
+        "title": "Stock Market Investors Just Got Bad News From the Federal Reserve. History Says This Will Happen Next. - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNVFmTDEyZGdmOW9nNl9ra0tsc2dOTmNiSkNvZXBjSFR6bUVHTjBRS1ljVjBHZndyNjRMUWJHdXVGeHh1Z3JmVXIxQlNBbEV2T0NLVEFua1ltLTJwT1BwdGFvUElGUjQ2TDZlVU5NX2ZnT1ZTTDJ1WmpBWGt3Ym0xR0hPOHd6RzFyYkRxTnQyMXZobExpamhpakZZZHA?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 09:08:01 GMT",
+        "source": "Yahoo Finance"
       },
       {
         "title": "Fed raises interest rates to 3.75%-4.00% in first rate hike in three years, with more expected - U.S. Bank",
@@ -42128,28 +42128,16 @@
         "source": "NPR"
       },
       {
-        "title": "Federal Reserve raises interest rates for the first time since 2023 - cbsnews.com",
+        "title": "Federal Reserve raises interest rates for the first time since 2023 - CBS News",
         "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9aQTI5TnA0bk5pNlk0b0E3NkpjR1Jfd1BFa1FwZ1ZhY01FS1NfMFBHVnBySWdFY1FBN1RibF9hZk1tU180bU1EdTFQS3JuNHotRE5TNjk1REFsdG5iY2hqeXpmeEJNMVNFWnQ5aF9fSQ?oc=5",
         "pubDate": "Wed, 16 Sep 2026 18:02:00 GMT",
-        "source": "cbsnews.com"
+        "source": "CBS News"
       },
       {
-        "title": "Federal Reserve rate hike reflects new world of sticky inflation and faster growth - CoastTV",
-        "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNTWROd05zcGE3LUY3Tmt2R3BCc1hvNEdVdWVQYjY1WWc0by1VN0w1d2dnbGw2bFFaRDFzR2NzaXlTR2hPemVMa2lOdE9NTFlrc2tFb3FUZjRoUkFpeF9jZTVadzJVSjJuX2dsaTZMRks5U01PM3pOajQyN09NZnVxcmZIbXRKRkw1TnByOVJ5ekRJWTE3akw2SzNJLXZ5YnVwTDIyaFNhQ2tQM2xwbGloT0hxd09hbjJVVEFIZFhzaFZsN1dBR1hNR2ZwWXdMNWlKZDduVnU0LUNYV2FJUlp1YThuSkRaMnZDX0Z6RnBOZ0Fjb1hm?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 11:59:42 GMT",
-        "source": "CoastTV"
-      },
-      {
-        "title": "Federal Reserve unanimously votes to raise interest rates - CNN",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZVpfMTVtX051OHA0c2g5UGhxZE5IYW10OXZYLW05djlmUTQ4Tl9zb3RiTTVIeE96Q2lHaDV6X016T2dVbWNsMmJjSUJTWHprRUU4ekd6ZkRNVzJCczlGWFpGS1poY19rQ3F3VkYxM1RIR0VrVHpQWHVteXNZeHJCTlpyNTFtTnFJQW1STklrbVR5TzJBd190X1VtanVUNTJabGZpQmJEbjNtY1NUMGZUSi1PREtCLXpnTmo0ZTlTRQ?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 22:22:01 GMT",
-        "source": "CNN"
-      },
-      {
-        "title": "Federal Reserve rate hike reflects new world of sticky inflation and faster growth - Ottumwa Courier",
-        "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOejVmUGNkSld2Q1JGT2kzNENRdi1fZ2hYbERZTUdRUHFuQTAweEZVcWtGTzk5Rk1pbXpqTElVUzBVMmJYbzFxRmJROGppVGh0R0NRVGVZVFlDamp1MndoeGs0VWh3TUV2aDhObEJUNWU0YVE2di1ZcDBNbnV5TVBqd1JrRHF0T0N2dUpwS0t5NGpIblh6VHpOZUtxYWVPWEZjYkQ3MVZGRzNaRnp5ck9aTFJvTklhcmN4YUNiY1NXTGt3V3J3Q29QVlJaS0g1enhycjQ1NUNIcXpjaDZIbzFjWTJDdEJNNU9qMDEzT0ItcnEyRmpGWk92YkFYeExqdEd5dFNfMkdDTUU?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 11:59:42 GMT",
-        "source": "Ottumwa Courier"
+        "title": "Federal Reserve hikes interest rates amid inflation concerns - Fox News",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5sN01CNTNuaGNfWTVZeHdITTJBdnpBUk9ZMjM0Mms5NF9mOVBnMll3bEdZZ0lxUkotQ2l6bEw2S00ydl9adERoMGdhRUd3V3Y5S1Atb0RR?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 16:13:51 GMT",
+        "source": "Fox News"
       },
       {
         "title": "Trump and the Federal Reserve are on a collision course over interest rates - NBC News",
@@ -42158,22 +42146,34 @@
         "source": "NBC News"
       },
       {
-        "title": "What is the Federal Reserve? - usafacts.org",
+        "title": "What is the Federal Reserve? - USAFacts",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBBZEdKQWVlamhIaWgzNmt3UUtWZnBYcDJsWFNzM092dnY2T3JZMGNnLWZWQnpmdk8zMGxxbU1RZ0lmQkM5bDU1ZjFWUlVVZVliSFQyOUpGUmFmbHFoZ010cVEwTUpqbUtKMG9vcQ?oc=5",
         "pubDate": "Wed, 16 Sep 2026 07:00:00 GMT",
-        "source": "usafacts.org"
+        "source": "USAFacts"
       },
       {
-        "title": "The double-whammy that's about to hit the US economy \u2014 and put a big squeeze on your wallet - businessinsider.com",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRkR0eVRZX1Vzb1ExZTladU55NjNZYnFaU0s4Z1Q3dHBOMS1LREs2Y3ZzQlM4LWZjSGFYamRyNkE5cndZdEFKVjZuNUlpdU5jY1hSbU12eDZ5dzVKOXBzd253NklDRnJyeWNIMGM2OTV6Y20wRXpubVJYaGRpQVFrMFBsYkk2Wkhhc09pdWhBb1NTNzAxNWlNaktJREVYRVNmUF9GX0pJdjVfdWU1bzVqWDBR?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 08:47:12 GMT",
-        "source": "businessinsider.com"
+        "title": "Federal Reserve rate hike reflects new world of sticky inflation and faster growth - Toronto Star",
+        "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOakhSWHN2MnNGZDM3X01XRm8wb2h3SzF0dnFKWkV0MUZjRWdWQ3dPU2J2enNqUmt0SzZFTzh5ZGpWb0cyYVM0bTBMTXpkMTl4NlVNdnVYUnc3R0czblc0TERKOE5Nd2swRlhPVFVXc2ZWaC1HRldUWmwydDJDLXJNR2JPS2d6NnYwQUtzanNvemJJTHcybUdQMWJDd0U4ZXV5VW9FajhmaFRJdjN6NlVCN3NxSTVET0oycXcyRjZPMG5mT2hoWm44azJWNVEwN0EyQkZkWWk3WVh4bG1Pc2lVRGk3T05sMXBZUHBBYkx5LXh0ZkFtTVNEWkl0ejNsbG0wMlhtbnVzeFN6blFDZVE?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 12:00:45 GMT",
+        "source": "Toronto Star"
       },
       {
         "title": "Fed approves interest rate hike, signals one more to come this year - CNBC",
         "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB2d21SUXhkazRGZk1QSTgxb2lQME5TUzdVNEZ0bWVxdWRENm96dUNfU040Rnc4Skl5MnZwcXlKLXh0c1NzYVhrNDZHY0F2M2otb0ZEZmRyd0N2Vlk1WjZ1a1FpZk9jaEtBV25HejlPUE5LVWllZDN2TtIBfkFVX3lxTE5MbUliaWM2Nm1nSDRQU0ZEUmdZUXVNVjRZeXpzRWlaY2pMRzMwdGFUb09jaWhqUFNJZEo5OUxJenR2aEtkcWR0MnVYR3VmdndJWlJTNGlPWmUzNmJYLS1oZ29fMW5PR0dzY3JYUkUzaGdfemtIQjBqc1hjMjNtZw?oc=5",
         "pubDate": "Wed, 16 Sep 2026 18:00:14 GMT",
         "source": "CNBC"
+      },
+      {
+        "title": "Fed's Kashkari says inflation is still too high across US economy, in Fox News interview - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQc1hVd3hZZmFPOEVudnRhdFpDczA0Qkg4TmxpeDFYN1NuWnFkYVNSLTdrRU42dGdXV21YcmlsM1RVREw1amRxQWV5aWVZZTRPRy1paTNiT2o3M0syblIxdkMtR2xKLVgzUEstZ01CcXRKd0dNbUpLZUxkV1hhS0cwcDZYRXdmYjJrTTc4RERBQWNyeXdHb0ZoVjhPMkQzVDJodDBoc3c0RTc4ckFJeGJ6WDlLTDVzM05rN3k5VWNXVVFlTWM?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 15:33:00 GMT",
+        "source": "Reuters"
+      },
+      {
+        "title": "Federal Reserve rate hike reflects new world of sticky inflation and faster growth - Ottumwa Courier",
+        "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOejVmUGNkSld2Q1JGT2kzNENRdi1fZ2hYbERZTUdRUHFuQTAweEZVcWtGTzk5Rk1pbXpqTElVUzBVMmJYbzFxRmJROGppVGh0R0NRVGVZVFlDamp1MndoeGs0VWh3TUV2aDhObEJUNWU0YVE2di1ZcDBNbnV5TVBqd1JrRHF0T0N2dUpwS0t5NGpIblh6VHpOZUtxYWVPWEZjYkQ3MVZGRzNaRnp5ck9aTFJvTklhcmN4YUNiY1NXTGt3V3J3Q29QVlJaS0g1enhycjQ1NUNIcXpjaDZIbzFjWTJDdEJNNU9qMDEzT0ItcnEyRmpGWk92YkFYeExqdEd5dFNfMkdDTUU?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 11:59:42 GMT",
+        "source": "Ottumwa Courier"
       },
       {
         "title": "Can Kevin Warsh Change the Federal Reserve? - Time Magazine",
@@ -42188,66 +42188,84 @@
         "source": "AP News"
       },
       {
-        "title": "Federal Reserve rate hike reflects new world of sticky inflation and faster growth - morning-times.com",
-        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQOVptU0UxRElfVWstWmVsMUxpbC1XS0xYY2ZjZE90U0FDMndPczN4akJQdm5xYzFDQkc5NG1wREtpUEFQLVBWVC1RQk1qMEpMTW82RG9VN1VxNU00V0lZc2ZuMmYzN1AyNFJuQW5VRHlqWUZvWUpoek9Db2F0Qi1NZkk5WWc3amNQSm0tQmJfdzMwVjNTZE5ObzM3MVNrTURkem55emhFNGszQjVfcGxFd0R0eW1RLU9pejRHV3ZRYTV6Z2FPTG1jcWlQZmZMRkhCaXNSRExHRHUyZUhyaVItUUNnWVFrdVZyV0NaeGNwS1N5bGQyYVM2ZVNRVTBCNjc4T29CeA?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 11:59:42 GMT",
-        "source": "morning-times.com"
-      },
-      {
-        "title": "Federal Reserve delivers unwelcome news to Trump - The Hill",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPOG9zdlBuaHNQd2lNQjg3dVFaZ2lmOURaN1JuUlYtMXI1ck82cXZnc2U3WHByRThBMlZ1WmRpNE5WYlUxRUNob1pwUC03ZWx2Zm1WUEdoQUVVTjFmZjJrN3RtZGxOOW05Mlpuakp4d3BjODIzckVwN0JIQi1YRWMzcHh5dnlwbUnSAYwBQVVfeXFMTjM1c3RIWm5WVHB3OVZyNmctUmVWcDlzV2VQTEVBYkZkT3VucmFZenh0ajkzVDM2TGRURGlpNU15R0ZTcVpMMjF1LTM5SGxZbWxqWklKUzRuM0FOVUx3RWltT29uOV9nUmdEWEwzcUNXREhsV2h6dW03YXQ4TFN4TDdfeFAwTGtaYmxiZnc?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 22:08:00 GMT",
-        "source": "The Hill"
-      },
-      {
-        "title": "Federal Reserve interest rate hikes usually pound stocks, but then something surprising happens - Yahoo Finance",
-        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMjhjWnBNa3pQVm1Yb0taMlNmQjR5RFlUZ3RkR1ZiVHhSeHBuQnE0cnR3ZS1JMERRSGpneEJ0bEV0bDhTTUhiYXp2aXB3SDVSZElYOXJmdkpWSDlXcXFRRkZoT01HaDVUMjNqeWRXXzFyX05HM05CMjFlOWg1NGdENmhwWEdrMmktMWo1QzlZajJnNWRoTjlIUnU2SWJXY3ZoSVBRWmxDLXdfZ3ptSFpoY1FCSFpRRGpiQXczcFRnNXRldFZYSzBIZGR0eEpjQ29udFBMZUJiNG5LX3QwRldjeVZGOXhIUQ?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 18:15:22 GMT",
-        "source": "Yahoo Finance"
-      },
-      {
         "title": "Fed Delivers First Rate Hike in Years With Unanimous Vote - WSJ",
         "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSnY3TVFMMUNHQklOdVhJV2JyYzZwRVhSZVJCNTFsZkdMR3Z5dmM4TGlxR3FqYUlhUEgwTlpXR25pNC1PdXF6bHJ1NHpLVzl5Q3NBanFRcnNjMFZhS01HMzFZZ0dzVzFvX0xZeTZxd0gwaUZpOFZIcUpvdzA3NkpXTlN3U0tVZFpXbWJZZ3FkUENBd1lsSTRacFBKeHl1c2JT?oc=5",
         "pubDate": "Wed, 16 Sep 2026 19:21:00 GMT",
         "source": "WSJ"
+      },
+      {
+        "title": "US Federal Reserve raises interest rates for the first time since 2023 - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeWhDdlBSX1lpSjc2M2Y0Skh6c25pbEZKUXkyajNkd2xlbERaQ2poY01KRE50dWxsSENqWmRERDEtekVfME9KRWx3ZVp0SHIwOXdlTm5LY2lQTEIwNkR0aVRGdEtKVGJEOV9DRVIwME45QkFiSlpWVFJtVU9BVC1XRU5tTU9aUXlQUEo1VQ?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 18:09:00 GMT",
+        "source": "The Guardian"
+      },
+      {
+        "title": "The double-whammy that's about to hit the US economy \u2014 and put a big squeeze on your wallet - Business Insider",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRkR0eVRZX1Vzb1ExZTladU55NjNZYnFaU0s4Z1Q3dHBOMS1LREs2Y3ZzQlM4LWZjSGFYamRyNkE5cndZdEFKVjZuNUlpdU5jY1hSbU12eDZ5dzVKOXBzd253NklDRnJyeWNIMGM2OTV6Y20wRXpubVJYaGRpQVFrMFBsYkk2Wkhhc09pdWhBb1NTNzAxNWlNaktJREVYRVNmUF9GX0pJdjVfdWU1bzVqWDBR?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 08:47:00 GMT",
+        "source": "Business Insider"
+      },
+      {
+        "title": "Fed Chair Warsh explains interest rate hike - livenowfox.com",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0wWWZhMjFUeFFITzBxWm1ZRjZjS0tnbE00bWxvTUVtem0zMEVGVTBYMW1zZG55MjFWQWxweE9rZnoyOWNKZ0hmZnVqMFh1bzBrOGxLOUwxaEZnT1pUYVBPZ0ZObVNYQUVWNzBfZFB1VEZRSUYtVmxTamZuTjLSAYIBQVVfeXFMT2hrOThNRFpobHE3dlZ0YVVjVkljUzFsaWZFUGFydlVWS1Zmb0RIUGJJaEFpOWRlZnJEUDNCckRHbXhGak1CY016dlF3X2N5NHVTeG54djZtMWlLcXNkUDNjVUEyTjlqSzR5aFl2Zm9pN3B4R25ibEVmNU1LWEN2aEthZw?oc=5",
+        "pubDate": "Wed, 16 Sep 2026 18:08:49 GMT",
+        "source": "livenowfox.com"
       }
     ],
     "India": [
       {
-        "title": "Are global stock markets heading for a crash? - The Guardian",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTHc2YlptSXlySkpublJrRVZzcXh1b1ZyYXVCZW1seDZKdGdRVmpqSEgtVjFKS2s5MjUzZi1uNlhjTWtHaU5qQldoc2dMUDdVYThkQk1YZjZFUXJGZFN0QU5pWlQ2dWFKSnJOUF92bTJzR0p3d3dFNEdMakpuUFRHLVBRd01qWElKNHBBa0hNb3FWLW5tb2htcUl6eXltTjdtay1iTFA1T2g?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 12:41:00 GMT",
-        "source": "The Guardian"
+        "title": "NSE - National Stock Exchange of India Ltd: Live Share/Stock Market News & Updates, Quotes- Nseindia.com - NSE",
+        "link": "https://news.google.com/rss/articles/CBMiPkFVX3lxTE15aFBDQy1lOHpHNnVLU3dRM1lsWmNDMVRQNWJPcXBDSklxT1VIUnVxVDMwRHJsRTJtdmNLcEd3?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 07:00:00 GMT",
+        "source": "NSE"
       },
       {
-        "title": "Stock market prediction for tomorrow: Sensex, Nifty outlook - What GIFT Nifty, Nikkei, Kospi, Taiwan signal for India - Livemint",
-        "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOX0ZiRUpZZXE0ZjA4dUhlTW80bW83Y3BMYXN1X0lNYlZCcjRveEp3LXlXT1JmamdZYzgzbmt0U1RwXzgteE9WQUFMcUx4TlRoRzdYdjI3OUpLekR1aHVROFV2OC1UY1NMU3RLSDdDVWpLcFJLMzg4RFZxTVRiaHROQ1JkR2Z2X3p2d05PTGpLRFk5S2NXa3pGWXhSNUFjMDFUREJiSGIyUEd2anNQTFdqaXdhRklKVDdaYzNTWi1KNHltRXFWQ0FzQVM2T2lwUVFpR183Qk1oekV1VHZoYVNaQlQ5Mkw0MnlUVG5rOUhsaEpXMjhDaWVfcG8xc2hfMnJINDg5bXpoNVBWV1Rv0gGSAkFVX3lxTE9SWjBQeFFKLUplLVYyNnRKWmxnLWZhZUpuOHFCQXFvZGpiaEFHVVZKaUtZME94clRFbFZIejZnUkduSGwxczFBU1ZuVUxWLTl6NHBOeF8yMkpmUGhWQ2h2STEwSkJNZm9PWGRIdDd2YkgwZFl2ZWZQckE5Z3FnM2xlSjZHem9lQnVhTEd1Q1RKTVAxeHE5bnJfOWp1N3V2eFJXTXh0ZjNRa0VrY284M1RnOVVuaUdfRUhDZllIY3RfZFVSVDlIZGIxMS0yUmRiU09jRDR5YnJDV1hxOGhkVC00X05tWXVidlNpS0tHVlR1N2JBdmxaY1dpUjd1Q2tWVEFLVTVCcmtqVmtyUldybDBpZHc?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 04:41:26 GMT",
-        "source": "Livemint"
-      },
-      {
-        "title": "RBI may deliver two rate hikes by CY 2026:Analysts - The Hindu",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPU3Y2X1A1c2o1aXcwWXpxT25rM1gwcmtWUndWVDduUE9MbDAxSHZrbkFOVFZhT0lWRWhLTDFoZE9lbEgtOFZVWUlOR3hXWXdiZzAwcWNoSjdlOHFkSk54VkFJZHdHMXVPQmVMZzVjcGhfV3F0Q19sVks0MTV5Nmw2TVFIRGxNeVotR1gtbGZ3aUZxTFpkQ0ppSnh4bkdUMDJEdjhIdkJaVDhJM3lVVjB5edIBtwFBVV95cUxNclBWNFBXZFdUMFE4a1VpeVBoNHlkQThXNVhiRzY2dHRxbmFKNlZPTDBIbklBWkJyMFBfU0NXYk82c2dmd2ZxRG9zUnVwSzVzVG5YbUs2NG95ay1mS21haDJFSUZKc0h6bnJUVllTcDFkWjExWlM4NHNPT2JCbHJhNWNpMV9tWFY1ZG5JdThZNXJHY1dfR0Q5T3JrVUlSWDZWZkhLUFltcDRYR1BhV2h0Nl80c05OcFk?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 15:48:55 GMT",
+        "title": "Trump\u2019s tariff decision can hurt energy security, trade, economy of India: Congress - The Hindu",
+        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNLVpDNGxoNjN5Q1ZEa1JubjdmQ1dnaW9VZldZY0FiUUktLTQydTJpV3NDWnBadk5adTNRbmtadElHZ0JEbG1zVmJMRExSdDd0SkNNbWJiYmduT3Z0V09WaHRza1BxU2FaVklYUHA5SXVFcm10blN4SWhnRFNDbEZHaDNOcmoxcExEZjNJdEkxYk94Vzk1YWswY0drbDBwMzBudmtwazd5OUQ2RlRxN1NfV2w3UklWNUZQTmh2MFg4NHlYS0tQZDJtNHByazBMbkp6RU45WNIB2wFBVV95cUxOVDRURWd4ZFkzQ0hkaERRTW9SdFFLcVJwZnR6SzlNZkFZb0FrNV8wMkQ2ckNYV3dZbk9ZOF9CVFhNMHVUaGZRX1ZrdTNVazFGRGlFcGgxeG1IYWxqckxka2YtcWtrZ1BFdkpsc3hZY0ZaaVVWODF3NUVvNXE5UklNQlVkYVcxcmpkdWFEM3pKcjIzdGtSZDZuSGxJZ2UzeU04UnFGUy1JclY2Q2tJZ19mMzFtRzhmNW1MT09maG1UQjZZNXEyMUQ3cGtMa3JFVlliS3FyMFo2bFBUSzA?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 15:48:56 GMT",
         "source": "The Hindu"
       },
       {
-        "title": "Henry Hub Natural Gas Futures Overview - CME Group",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5vQ0F3ZlFyWWRxT0thR1c3eS1iNExsSGltTmx4Y2VTVkpkZDNFcEJhR2FOMkRqUmtsSW9GZXk0MVVKWHFWUHJmZlZZYktWdzl1bVY4dlJ2U3ROUjR6dE9WZlpIOXdiTGpkOWljM0ZjR2tVR2JqQkxN?oc=5",
-        "pubDate": "Sat, 19 Sep 2026 00:00:00 GMT",
-        "source": "CME Group"
+        "title": "Are global stock markets heading for a crash? - The Guardian",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTHc2YlptSXlySkpublJrRVZzcXh1b1ZyYXVCZW1seDZKdGdRVmpqSEgtVjFKS2s5MjUzZi1uNlhjTWtHaU5qQldoc2dMUDdVYThkQk1YZjZFUXJGZFN0QU5pWlQ2dWFKSnJOUF92bTJzR0p3d3dFNEdMakpuUFRHLVBRd01qWElKNHBBa0hNb3FWLW5tb2htcUl6eXltTjdtay1iTFA1T2g?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 15:49:00 GMT",
+        "source": "The Guardian"
       },
       {
-        "title": "India ranks first in business climate among 41 global markets: Swedish Chamber survey - News On AIR",
+        "title": "Stock market prediction for tomorrow: Sensex, Nifty outlook - What GIFT Nifty, Nikkei, Kospi, Taiwan signal for India - livemint.com",
+        "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOX0ZiRUpZZXE0ZjA4dUhlTW80bW83Y3BMYXN1X0lNYlZCcjRveEp3LXlXT1JmamdZYzgzbmt0U1RwXzgteE9WQUFMcUx4TlRoRzdYdjI3OUpLekR1aHVROFV2OC1UY1NMU3RLSDdDVWpLcFJLMzg4RFZxTVRiaHROQ1JkR2Z2X3p2d05PTGpLRFk5S2NXa3pGWXhSNUFjMDFUREJiSGIyUEd2anNQTFdqaXdhRklKVDdaYzNTWi1KNHltRXFWQ0FzQVM2T2lwUVFpR183Qk1oekV1VHZoYVNaQlQ5Mkw0MnlUVG5rOUhsaEpXMjhDaWVfcG8xc2hfMnJINDg5bXpoNVBWV1Rv0gGSAkFVX3lxTE9SWjBQeFFKLUplLVYyNnRKWmxnLWZhZUpuOHFCQXFvZGpiaEFHVVZKaUtZME94clRFbFZIejZnUkduSGwxczFBU1ZuVUxWLTl6NHBOeF8yMkpmUGhWQ2h2STEwSkJNZm9PWGRIdDd2YkgwZFl2ZWZQckE5Z3FnM2xlSjZHem9lQnVhTEd1Q1RKTVAxeHE5bnJfOWp1N3V2eFJXTXh0ZjNRa0VrY284M1RnOVVuaUdfRUhDZllIY3RfZFVSVDlIZGIxMS0yUmRiU09jRDR5YnJDV1hxOGhkVC00X05tWXVidlNpS0tHVlR1N2JBdmxaY1dpUjd1Q2tWVEFLVTVCcmtqVmtyUldybDBpZHc?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 04:41:26 GMT",
+        "source": "livemint.com"
+      },
+      {
+        "title": "Warren Buffett sounds alarm as stock market warning returns for only second time in 155 years - The Economic Times",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBvU1A3YXdwdkdEeEhvQ1lLLVhhUk9sWUdXUFdDb1F4NjUxRDlnVDFkOUNjdFVjbTBBc09kNmNkRl9UbzkyOFVvbjIxYjFoMVQ3MUNJNGFmOA?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 10:15:00 GMT",
+        "source": "The Economic Times"
+      },
+      {
+        "title": "The Silver Lining in Soaring Interest Rates: The Economy Can Handle Them - WSJ",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOFNjb3dWRURPbU9ZTXVqcG52dmZHUjBSQ0R5RlE3RkktMkgtZ00ycW5OQTdvajk1NnQyWkR5TTNBZkNzNXkwLUdIbl9EeWJHOGQzU3ZSNFRLTnktRkoyNnY0X05PdzBSOTMwTE10RkNucjBuOU9iUzM5T3RIU2s3OFB4eWViT3hDd0NsdjBtUmt6NUNFRm5oclBteTlDUk52TkxsQWNBcWhua0JMdjBGMkF0bnlHQmtqVmRQTV9wMEV0Zw?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 15:19:41 GMT",
+        "source": "WSJ"
+      },
+      {
+        "title": "India ranks first in business climate among 41 global markets: Swedish Chamber survey - newsonair.gov.in",
         "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQOExiQk8wNHNSZ2l0b211UmFaNi1sb2xtRC0xSEkwa2FQZlA3UUdiQi0ySlE0dHloZ2xjQThpUUY5ckVJV2RHMWNTUTZVRk1abEZVV3UtTWxJQ2hFMXVtVWdweHJJNFRxTGl1NFZtYjMwcjJYbjV2MWlFRE92XzlIYWFyc3l3TWROcEVtaF91ZW1jYkdta24w?oc=5",
         "pubDate": "Sat, 19 Sep 2026 05:32:35 GMT",
-        "source": "News On AIR"
+        "source": "newsonair.gov.in"
       },
       {
-        "title": "Yen Swings as Markets Digest Bank of Japan\u2019s Rate Path - wsj.com",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNWJMQTlUdklLNlVnQWxVN0RNb1YyVWtPcG5pY19oUnhfbzVUWEVFc1NxQi1PRDAyVkNjdDBTOHZLU1A1ZGxyUFhOY3cxblBmX1l2aDc3RDZfUmp4cXpTNHI0X1FzZ2VoSXVRalAxTGYxR0UxZHdoTU9PS1VjaW1RWUt5eC05emI0VXAyV2s5ZkRDTks0aVROMWlnODN0a210bmpnOWgwZHFzNHlzSno0RVZPeUFzdw?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 07:24:11 GMT",
-        "source": "wsj.com"
+        "title": "Trade Setup for September 21: Top 15 things to know before the opening bell - Moneycontrol.com",
+        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPYTNudUtBT1JFZW80VW53eWRHdWRJY3BqUkwtUVNwdWFYSFBxMVUwdG5Uejh3ZTJPZkFiRFJDU3lwTkozQm9pYjRFV1p5U2NuS1lXQTYxQzYyWlpLd0tLMjBRdlN6clA3SVRqOGFDci1EUWdXV2hIREVYRXdlTEY0Tlhpck04OFJTUFJ0cTJpM1B5RWhXby1NQy1BSU1CVkx0MnZNZ2lzS3N5RlVfSzAyR05DTjVoaThqU1BtWmxZMmtaMU9DSHRUeFVtTUE1VGQ3OUVqNmtn0gHbAUFVX3lxTE9ObHU5ZTZ6SjlaZEtPdGp5YWJPVVltbmx4dW4zQjhQeng0QmhYWWtleTJ5NlM5UlRvQ1laZWRpN3pHX3FGM2hHZW1GQXBVQ0xfSnVsbDFKdDUyWldMcnpKQ1ZkRUFXNzMtajM4TnF3eXhWdm9VbHUzdk9qS0stQjZDWHZiLU1kVjc5bjdvVHRSUnRfSkFORFJ6S3cybWw2STNNbGVKNzJ0RkJpLUhCS2ljN0dFRGVBRjBMZ0UwUGZSM3pfb0pGcFVUWTR6SkZ1ZHZuNVNGTVRpZE96TQ?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 11:29:07 GMT",
+        "source": "Moneycontrol.com"
+      },
+      {
+        "title": "Share Market News: Nifty 50 Outlook & Prediction - Liquide Blog",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQaFJKTXotNjFOQzZ4b3FoYjAxMGh2X1gydkcwMjc4OEFCMU1JSS1sSEh4Nl9PdjMyYTlpQXc2dDM1MmJFV1pzLVZkSTBjdG9fSUhwWjhZSHJrUnRXc2F1aHE2dXM3VkJsZ2pwVlNuMHhteGlUcElfdUNRQmhrQkRreDVHbDN5OEdic3FDUXJrRlFXTDNRcFBOa3N3?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 06:00:06 GMT",
+        "source": "Liquide Blog"
       },
       {
         "title": "New experts join Google\u2019s AI & Economy team - blog.google",
@@ -42256,46 +42274,16 @@
         "source": "blog.google"
       },
       {
-        "title": "The New Scarcity Economy: An African Lens on UNGA 81 - United Nations Development Programme",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBTTUY3anJIYV9BWmNLRlFuOHV1MW9NUnhxXzJwLV9yWUtVYmtCX3dxaEJjdkNJelhLaURLNVNlZU12NmkySFpEdFdrbDdkTHJwTnFhVFlQNDdzSkFNWTNrS01RMVM2YVVXQXlvc1pILXRIN2s3dEE?oc=5",
-        "pubDate": "Sat, 19 Sep 2026 21:40:41 GMT",
-        "source": "United Nations Development Programme"
+        "title": "What NSE IPO tells you about Indian equity markets - newindianexpress.com",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTE5JdDdrX1JZZkk1dXBxN1kxckRuY25aNmVBNEZmYndFWnFZQU5raWVZd2thY092OUItRlRkYmRYYTZoTVNBMUpMNURnVmZSd053Y2lWeUV2WDhCTzNoNVd4RU8tVS1rX1ZIUGdfWk5ObTVlbEdzUW15QktPdklIUkVHNmk5T0l6VGN0VXV2N1g0TlRGQVc3WWJRNHFRcl8wdjduRUJ0UdIBtAFBVV95cUxNQmFxUFJpVWVTdUZSOFdBYjJ0QVVyOHVycWVvenhmTVJvTjJiSlhxdWVMTTlIU0R6eWhyVW41VHNZNVZ6WHpNMlFfUDV2R1d2R2ZSNVZWejJ4cWNwYVN6dmFET004RVlHNXZ6M3g5MDJsU2xXWV9rc3RSVUJRbnJPaWRBRERHWEkyMExPLWtOYnloeFVWdHd3OVBGc2Mxckw5TkVqRWNhWElRVWxmUi14SzRNRW4?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 17:12:20 GMT",
+        "source": "newindianexpress.com"
       },
       {
-        "title": "AI\u2019s Wobbly House of Cards Puts Markets and US Economy at Risk - Bloomberg.com",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOUIzTWFrSUtlVXdxeVFicV9kTjY4bnlHa295MjlFVlYyYzQ4VGp4NXBPbWlLM2RDUkdocWZ3VHU0R0lKTTFtWElhbHMtQXdhREZLc203d3dpMzI4UTFSUGN2em5QM2ZQMC1aZkZrMUx5YUNTZXJmbE90dmxSNVVrTVpUYXFoOTFUT1VZRWx3ZWNjOENjSzNYdWJFeGtLZlBGTnZWS0Q4aFd0MWxORTA5dWIxdw?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 13:00:00 GMT",
+        "title": "Fed\u2019s Kashkari Says Inflation Reaching All Corners of US Economy - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRldnZXJpWHB2M2J5SWItSnZzQllXR2Z2TmFPdWNKTk5zOWNfVDNwOXg2U2RCNG9WZ1VtejVvNC1ieTA0SXJfQ0tneHU1b3RKN1RKR3p3Rk1XMFl1TXRtTklsSXhRcXU4S2dKSUZIbXl4dXh6Nl9ZeGJydUdFbS1aNlBaRGllZFhEMVVRb0FLTHlzbXpfVThrOXUyX2g4Q1FoQ2FObERYM0R2NWMzVkh6Nk1rM3RWQQ?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 15:32:17 GMT",
         "source": "Bloomberg.com"
-      },
-      {
-        "title": "Russia\u2019s new air campaign seeks to destroy Ukrainian economy - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFVE5TZ05ia3RYOXZRMzhhMmU1SE8yOS1qQnNKRjhiMk9zUjluSVJxY1d5TlVsUXZVVXZSc0k1NVZleE14MFluMldLakk2dWZxcTZhVmZ6eTFOUjlURFVycTBFVnBxX2lXekFIRjJteFA?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 04:00:03 GMT",
-        "source": "Financial Times"
-      },
-      {
-        "title": "The New York Stock Exchange | NYSE - NYSE",
-        "link": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE93UWVlU3g1TVNpdTNEcjI2Yk9kSHU2Tnh5Y0stVFBGRWVkLW9wbU1EbHhQaHdIOE56d2V5NXVhSQ?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 22:00:00 GMT",
-        "source": "NYSE"
-      },
-      {
-        "title": "Bikoshito Bongo: An Evidence-Based Policy Roadmap for West Bengal\u2019s 5X Economy - orfonline.org",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcm9JaHd3d29YVlI4bzhXaEhYNF9RcHl0T1ZxSk9od2lWdFItWDBZZkZmX1pOWTN3eGh3TGozQWVLQ2RJSFdJZTVIcDlKblk3VjVSdHBsTmV0MnY5d2VPNVpmTWlzLXl3dzJvczczeDZiaWlBNEp1eUh3SGFOTDUxZDBTNlRnSDk3MTBFSlpldmxZNXVrbDhGYXV5TGFiOGlPb1JHak1rU05sckFpeUhMMkNB?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 10:49:55 GMT",
-        "source": "orfonline.org"
-      },
-      {
-        "title": "Can skirt lengths offer clues about the economy? Understanding the Hemline Index - The Times of India",
-        "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQdndxekROWHVxTmw3T1dBcHlVWlp5bnFKRk5GWHZINHZORk1hZ3R2b3JxeVdSWFVaeVhkWnBBeFd5UmRZZU9Yb0dtdzl5cmRWSXM0OTRmRUdHSE5sV0p4LXprOXdrMWZkMC1RNGlGWGlweXN0TzRYZFZ3cTNjU0tIcmF1SGFVbVZnQ1VmVDNTY0xjZmFFdzlfVmNQRXVrbHBrNnhkdmo4cllyN0lIQm1kdnhfWHRrU2VLbnhacUNrMFYyTDhpOGVvN0QyT1dzYjNiX3cwVXZ0WFhaWGZXdUo1NVU5MFVQNjBEQ0ZPYVozbGJLZmtFRDlDX3dDWXZzTURhcTE40gGIAkFVX3lxTE5RWlJZWFUya3ZhU1Vod0JHZFQyZEFVa2lQLWVuTEhfMnJkblV3bU5CTWk0eThaa3lPYjVZUzQ5TTlKaExFOUxTTUZ0MTczNS1CeFA1VWdndmt5d0lXR0JndzFlSHFSNVlYRUhvTTAwTWpKZXQxRnl1TS1CQWIzdG9WT3F3NzNTZDNWWmZ2dS1idU9waFd6Rk5xaWRGUU9LRDdDQ3huM1JMc3hDaFVPLXhXcEN4SmtMZC1pQ3VXZU51eDQ2QnpqUFcxcGVrU2Mtd2dsV3FCeHVKQ2VjeXpia2g2cmJiaVJycGJjVlhEOU9pQ1ItNDllbTBoSnVNWGU1WTcteWVGajZmdw?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 11:17:00 GMT",
-        "source": "The Times of India"
-      },
-      {
-        "title": "Nifty Outlook for September 21: Worsening geopolitics may continue to dampen index recovery - CNBC TV18",
-        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPcWVKRDFtSjZKZ0k0bG85VnZGazQ5TXFOc1dvNHNIWVlPTUpqdzlHVWdHc2Z4MlJVLTFVRk5tYnozbnBWY1o3S0tXQk1va3VUVGpDQkNyckQ3NXA4Qk54cVhjRkNMVzlPbDdEOGRQYW5Bdjh6TDJ4emlORjVsRXNXV21tbDFVRVp4X29GcUpKSDBNOHE3N1UzWGpib2dBekNiMEEzdXlhdlVUZ3lpZkJoMXQ3cWYzWGs0ZmxVMEJvTUFUb1N5UV91Rm5LTEVKUlBUdFpoTtIB2gFBVV95cUxQejlpblVvVzMtNjJIdElmZ1Y0YWRkRjBMNTRqbk5peFcyVmRCMExJVG03QkxqendQSkhKd0dTNU50cGhzdWF1c2N2a0RXRnJzMEtacEN1WFZhTGdkNG5BbDJCaTZNaDFxQ095N1JPSjRtdFhCajZSUmEwNF9vb3VJNnJIMG1oMjZxbmJMT2ZaQ1Zabno0MUhzajRjY0tYM3d0UWxuZWVnaFN4ODBMdFNnazRKNW5qSlNnTlY5VFRFSUNVSHZ3aVFsZXJLT01rZVB0SGxXUnpTTEpudw?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 14:03:26 GMT",
-        "source": "CNBC TV18"
       },
       {
         "title": "Crude oil, West Asia situation likely to drive stock market this week - Business Standard",
@@ -42304,34 +42292,46 @@
         "source": "Business Standard"
       },
       {
-        "title": "Chartist Talk: Nifty may break above 23,600 next week; SBI Securities\u2019 Sudeep Shah picks 2 smallcaps - Moneycontrol.com",
-        "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNY0hEWXRfZ1owcktJbmZUZjV1eEZYalpERzBiRUFvUXZqZ0RTSGVaWDNGcFRValg4enZqOFR6ekk2eXhPdnpUWEt4NG8wRWVRVVI4WVVqNS1leHdfemU1NTZUQjZ6MGh3MVNCdnBZbzRxdzhTZHIzemZ2bTBRUWU4NnFHMDRTeWhxaUUwRkF3X193V3VPeTFxRmVxZXQ5QURULWtpNURSMFRJQllYUUo4LV9USENqdTRzTHpKZllTem9rVEo4b05lUVJ5d2xKTHVzTzg5RjJsbHEyZEx1eXJQYXktLVpfN0wycFlZVXlHdHlnTHh20gH6AUFVX3lxTFBKZndkNDNIZXFUZHJXWTBkb25rdzJHVVliMzVxVmVfTzRvbnBJTjhKREVXTmgxeFpNNUtJOXlneHJ5bzRJM094cVU3eC04TGh2OFlLOUs4VmVtOFY0Ukt5R3lmQVVNWUFqMXlpZ2dkMWowUjktQy1wRFZXRjdHOTliUVU1c0ZMTXFQTVpCYUpPMzZNQU9XZExqZ3lMclpxS0dZdGFvbTk0ZDhNNVE1Zl9lcEp3bzJYVzFaRmNnVjB1MFNYUzVjd0stRG92alN5V0NqOE1yR2ZRVXJMYWtNdDZoaUNTSFhMWnhxRlJqNmdZaXVaczJDT2FnUkE?oc=5",
-        "pubDate": "Sat, 19 Sep 2026 01:06:28 GMT",
-        "source": "Moneycontrol.com"
+        "title": "Bikoshito Bongo: An Evidence-Based Policy Roadmap for West Bengal\u2019s 5X Economy - orfonline.org",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcm9JaHd3d29YVlI4bzhXaEhYNF9RcHl0T1ZxSk9od2lWdFItWDBZZkZmX1pOWTN3eGh3TGozQWVLQ2RJSFdJZTVIcDlKblk3VjVSdHBsTmV0MnY5d2VPNVpmTWlzLXl3dzJvczczeDZiaWlBNEp1eUh3SGFOTDUxZDBTNlRnSDk3MTBFSlpldmxZNXVrbDhGYXV5TGFiOGlPb1JHak1rU05sckFpeUhMMkNB?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 10:49:55 GMT",
+        "source": "orfonline.org"
       },
       {
-        "title": "India's trade deals creating new markets for entrepreneurs, says Modi - Fibre2Fashion",
-        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQaGVuakhUN2E1Z0VfZ2tJaGREazhYRzBXWjFOUHl2cDl2aVpBNkRxRlJiMEFIMDRhYmNVMmJMdG5faFJieXBmNXYtckxGVHoxb3BiYTB0aFV3MEZsWnZBSTVFLUQxUndxZ18yNG55a0I2OENmOHZvaEtEbGp1aFhRcmpUdnYxVFpKWXZUYjJFVHZLTnQ0dVVoMnM2TjZoMW11V1hyNVg4LWVHZ2g1Y1c3bFRzeFUtMklreUxfUnhrMjFGWnRZWkZPenlpT19OZVUzTTUxZEFB?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 04:00:56 GMT",
-        "source": "Fibre2Fashion"
+        "title": "RBI may deliver two rate hikes by CY 2026:Analysts - The Hindu",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPU3Y2X1A1c2o1aXcwWXpxT25rM1gwcmtWUndWVDduUE9MbDAxSHZrbkFOVFZhT0lWRWhLTDFoZE9lbEgtOFZVWUlOR3hXWXdiZzAwcWNoSjdlOHFkSk54VkFJZHdHMXVPQmVMZzVjcGhfV3F0Q19sVks0MTV5Nmw2TVFIRGxNeVotR1gtbGZ3aUZxTFpkQ0ppSnh4bkdUMDJEdjhIdkJaVDhJM3lVVjB5edIBtwFBVV95cUxNclBWNFBXZFdUMFE4a1VpeVBoNHlkQThXNVhiRzY2dHRxbmFKNlZPTDBIbklBWkJyMFBfU0NXYk82c2dmd2ZxRG9zUnVwSzVzVG5YbUs2NG95ay1mS21haDJFSUZKc0h6bnJUVllTcDFkWjExWlM4NHNPT2JCbHJhNWNpMV9tWFY1ZG5JdThZNXJHY1dfR0Q5T3JrVUlSWDZWZkhLUFltcDRYR1BhV2h0Nl80c05OcFk?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 15:48:55 GMT",
+        "source": "The Hindu"
       },
       {
-        "title": "Citi expects hawkish Fed to slow non-AI economy By Investing.com - Investing.com India",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSFpiSEdiTHpnUkdGTUN2bTF5aWhCeWFlMHB4VVdKdXotVlRHdU1VOE1OQjhaQnVjaE5UM2N4ekNXUld4Nlllei1SV2txRFZWVXJFUlBwUVJoRjUtZVM5UEh0LU4wVVh4TnFUZHNMNDNVNFNyamN2OW02TlZNWWhjZXJMME41VVVKeHNuWXhfWWJsOUVKbkwyY3cwbE1BZw?oc=5",
-        "pubDate": "Sat, 19 Sep 2026 19:51:10 GMT",
-        "source": "Investing.com India"
+        "title": "Yen Swings as Markets Digest Bank of Japan\u2019s Rate Path - WSJ",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNWJMQTlUdklLNlVnQWxVN0RNb1YyVWtPcG5pY19oUnhfbzVUWEVFc1NxQi1PRDAyVkNjdDBTOHZLU1A1ZGxyUFhOY3cxblBmX1l2aDc3RDZfUmp4cXpTNHI0X1FzZ2VoSXVRalAxTGYxR0UxZHdoTU9PS1VjaW1RWUt5eC05emI0VXAyV2s5ZkRDTks0aVROMWlnODN0a210bmpnOWgwZHFzNHlzSno0RVZPeUFzdw?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 07:24:11 GMT",
+        "source": "WSJ"
+      },
+      {
+        "title": "Market News: Share Market Today, NIFTY, BSE/NSE LIVE, Sensex Today, Latest Share Market News Live Updates - livemint.com",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFA2eURra0RNN0hZR0ZxYmMxV00ycGZkVS14M1JaTGFnc2lGeVdLS3NUaDQ0Q0pKSkpLbDcwMUhQN1lwcHJNbmc?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 07:00:00 GMT",
+        "source": "livemint.com"
+      },
+      {
+        "title": "AI\u2019s Wobbly House of Cards Puts Markets and US Economy at Risk - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOUIzTWFrSUtlVXdxeVFicV9kTjY4bnlHa295MjlFVlYyYzQ4VGp4NXBPbWlLM2RDUkdocWZ3VHU0R0lKTTFtWElhbHMtQXdhREZLc203d3dpMzI4UTFSUGN2em5QM2ZQMC1aZkZrMUx5YUNTZXJmbE90dmxSNVVrTVpUYXFoOTFUT1VZRWx3ZWNjOENjSzNYdWJFeGtLZlBGTnZWS0Q4aFd0MWxORTA5dWIxdw?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 13:00:00 GMT",
+        "source": "Bloomberg.com"
+      },
+      {
+        "title": "Can skirt lengths offer clues about the economy? Understanding the Hemline Index - timesofindia.indiatimes.com",
+        "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQdndxekROWHVxTmw3T1dBcHlVWlp5bnFKRk5GWHZINHZORk1hZ3R2b3JxeVdSWFVaeVhkWnBBeFd5UmRZZU9Yb0dtdzl5cmRWSXM0OTRmRUdHSE5sV0p4LXprOXdrMWZkMC1RNGlGWGlweXN0TzRYZFZ3cTNjU0tIcmF1SGFVbVZnQ1VmVDNTY0xjZmFFdzlfVmNQRXVrbHBrNnhkdmo4cllyN0lIQm1kdnhfWHRrU2VLbnhacUNrMFYyTDhpOGVvN0QyT1dzYjNiX3cwVXZ0WFhaWGZXdUo1NVU5MFVQNjBEQ0ZPYVozbGJLZmtFRDlDX3dDWXZzTURhcTE40gGIAkFVX3lxTE5RWlJZWFUya3ZhU1Vod0JHZFQyZEFVa2lQLWVuTEhfMnJkblV3bU5CTWk0eThaa3lPYjVZUzQ5TTlKaExFOUxTTUZ0MTczNS1CeFA1VWdndmt5d0lXR0JndzFlSHFSNVlYRUhvTTAwTWpKZXQxRnl1TS1CQWIzdG9WT3F3NzNTZDNWWmZ2dS1idU9waFd6Rk5xaWRGUU9LRDdDQ3huM1JMc3hDaFVPLXhXcEN4SmtMZC1pQ3VXZU51eDQ2QnpqUFcxcGVrU2Mtd2dsV3FCeHVKQ2VjeXpia2g2cmJiaVJycGJjVlhEOU9pQ1ItNDllbTBoSnVNWGU1WTcteWVGajZmdw?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 11:17:00 GMT",
+        "source": "timesofindia.indiatimes.com"
       },
       {
         "title": "India's exports to core BRICS markets surge 34% in April-August; China leads - The Hindu",
         "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUV9vWGFpS3dQN3l0WnFxdzNZRE1aM0VGRjk3a0w3dzZjQzkwUlBDMUI5VkxzUjhOWWhuVDlPQ1lFSVdNSEhjWFp5NjdEUEdLWGF4b25HN1Z2cldCa1c2cXFialdWX21RcHN3YU45MDlFTjlWUjhRSFJyTUxsc011VmstZHJkR3FKRllYN3pfdVluNmZ0SVgxTEZWLXBOcDM0Qmg1amlFY1Z1WENCMzRWWGROMWtaMGkzRXpVWFljR29UblZtUkJtMjJiQnTSAdMBQVVfeXFMUEtKNVdzQ0VnVnhnNkR4bEhoZ2M2X0lYVEFlcDdhUC1FSklfT1pFZVRyNnEzdjVmdlpWZWdBTTllbWxUTnJmbjNScnhTal9tdHdPaU1TMU1CTEppOW5HRU1pb1hZaTNYUWM4aFA4UWstZEhqSFVqMVpyRUF3YXRqREx2dThBbUNLeGlEMFN0VXczbVN6Y1RCak1QYVFjaW1HOXRQMFRldHZ0MTU1VjV2Y2cydVdrZTdNc3J2Q1A4SVlwMUxvWDZqdG5uOWhsSjV6ZlJwZw?oc=5",
         "pubDate": "Sun, 20 Sep 2026 10:00:54 GMT",
         "source": "The Hindu"
-      },
-      {
-        "title": "India's software services exports rise 8.2% to $221.4 bn in FY26: RBI data - Business Standard",
-        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNLUh2MWowNjhfOXd4V3A1ZUZ4dDFVN2pxUURQQmhSRlM1cmx6WEwyY2NiVUh0ejZLQUkxdjFYQUZxZ2o1UnRCNkdDWHNzZ001V1FUVjhMVDktellCSmkwdUxYTFhPZG1POXZqVlVIRWo3WHotbTg5T0laS1VIaGtScVF2LXRPNDIxU256cVlOeW1jclpnQlRQOEltSkFiT1RIX2MxUHJKbWRtcF9WekxYN3BZMjA0YUx5UWhGR182YkFFVFRaWlkzdzJHemJjeC1Ndld1NtIB2gFBVV95cUxNN193WUU0SVA3bGVfQkwtM1ZGTWMyamlkV0IwUVoxWTBOQVlrSTJfQXcxdTBhMWhPRWZOOGY0ZGoxLUNRSXg4RUZ3RjJXejdKcENuRUMwLTBCQkdfdUVjMzdWLVdDMkhBQjE1UkVsSEw5Vm1lbVpwOC00SFptdVdPX19BYk5hXzFUNUZhVWJYQzhzQzFqQ0d2b2ZkaTM5NUU2Y0ZPWFM0VXJXNmFhYXdFT3doamh0eUZGeElxbkJyYzlJcl8xWWxXM3dkeTJlVndTSjNiR1VOejhnUQ?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 11:11:38 GMT",
-        "source": "Business Standard"
       }
     ],
     "EU": [
@@ -42372,10 +42372,10 @@
         "source": "The Parliament Magazine"
       },
       {
-        "title": "Savings and investment union risks further stifling European growth - omfif.org",
+        "title": "Savings and investment union risks further stifling European growth - OMFIF",
         "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeFQ0YWtaXzhHYThQcEtZd2lUb1BlRERPTHJoaXFuT0FrR0NRcHFoNHJOMWFhVV9ybVVGWDBSQXlOYUxvQTVDSnFpTXJud2UycHlkUWdTOHF1MllVTmhMMkQ3Zzg0d3BHeW9zSWp2dDFyM1FmN1NDSW1pSE1nYVRLMFlscmRpdVhUdmJsTE9QU1Z5OW9HZDIySW11ZjNMMzg?oc=5",
         "pubDate": "Thu, 27 Nov 2025 08:00:00 GMT",
-        "source": "omfif.org"
+        "source": "OMFIF"
       },
       {
         "title": "Recasting the EU\u2019s single market for the permacrisis era - EPC, European Policy Centre",
@@ -42476,10 +42476,10 @@
         "source": "Bloomberg.com"
       },
       {
-        "title": "China Stockpiled Oil, and Now It Could Dominate the Energy Landscape - The New York Times",
+        "title": "China Stockpiled Oil, and Now It Could Dominate the Energy Landscape - nytimes.com",
         "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbldKVmtJeEJZN19iRU9sU0tzTnJONS1UZTZHcmxpY2Uwd2lzVjhLbUV3ZXFhYXY0RjN4RnNTX1M2eFRIa3BUU0tQUnpibVBWNFR6UmM5ZVBfaTE2Z1A4Q2VjdjB3eENmQnhpN3BKNUJNUEZQRjVfRkdlVmEyS0tRQ1ExOUItcHVqczB5VWxfVQ?oc=5",
         "pubDate": "Thu, 17 Sep 2026 13:43:04 GMT",
-        "source": "The New York Times"
+        "source": "nytimes.com"
       },
       {
         "title": "Grains See Risk Off Selling and Profit Taking Ahead of China Summit - AgWeb",
@@ -42506,16 +42506,16 @@
         "source": "markets.businessinsider.com"
       },
       {
-        "title": "India's exports to core BRICS markets surge 34% in April-August; China leads - The Hindu",
-        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUV9vWGFpS3dQN3l0WnFxdzNZRE1aM0VGRjk3a0w3dzZjQzkwUlBDMUI5VkxzUjhOWWhuVDlPQ1lFSVdNSEhjWFp5NjdEUEdLWGF4b25HN1Z2cldCa1c2cXFialdWX21RcHN3YU45MDlFTjlWUjhRSFJyTUxsc011VmstZHJkR3FKRllYN3pfdVluNmZ0SVgxTEZWLXBOcDM0Qmg1amlFY1Z1WENCMzRWWGROMWtaMGkzRXpVWFljR29UblZtUkJtMjJiQnTSAdMBQVVfeXFMUEtKNVdzQ0VnVnhnNkR4bEhoZ2M2X0lYVEFlcDdhUC1FSklfT1pFZVRyNnEzdjVmdlpWZWdBTTllbWxUTnJmbjNScnhTal9tdHdPaU1TMU1CTEppOW5HRU1pb1hZaTNYUWM4aFA4UWstZEhqSFVqMVpyRUF3YXRqREx2dThBbUNLeGlEMFN0VXczbVN6Y1RCak1QYVFjaW1HOXRQMFRldHZ0MTU1VjV2Y2cydVdrZTdNc3J2Q1A4SVlwMUxvWDZqdG5uOWhsSjV6ZlJwZw?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 10:00:54 GMT",
-        "source": "The Hindu"
-      },
-      {
         "title": "China holds loan prime rate for 16th month as PBOC signals slower credit - CHOSUNBIZ - Chosunbiz",
         "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWXJlenNJQWprU2hQcnljX0ZLM0lhbWFkSGlFdExrcjh1M2ZpOVd2aks0b1hfQWdXbWhxWnJQS3ViTzh1ZjFMQmlpYXFlMnV6ZzZOQ2xHOWtPSUxuS0xfUnFab2tYcGhCaDZMMktPYnFMRUh6WHFxSzQwb19nLTFWZ2U5c0k3OFpq0gGcAUFVX3lxTFB0TmdCeHNRaTduLWlRb1NMYTA2bGtBdEcxNjYwQXFISGo5YlQ2RlV1dmRuelVyNWMzWm4wbHBBb25qb0NDLXFxTEZCM0VONnZZY3ozSGcwa1U3T3NyMXlqSl9uV2R1UXQ1cU1sR3RDT24taEFKYlRUU3RnX0VIZWg4N0kweTdKSEtrUFRabkFHOTE2THVGSDdkc1pOYg?oc=5",
         "pubDate": "Sun, 20 Sep 2026 02:07:00 GMT",
         "source": "Chosunbiz"
+      },
+      {
+        "title": "India's exports to core BRICS markets surge 34% in April-August; China leads - The Hindu",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUV9vWGFpS3dQN3l0WnFxdzNZRE1aM0VGRjk3a0w3dzZjQzkwUlBDMUI5VkxzUjhOWWhuVDlPQ1lFSVdNSEhjWFp5NjdEUEdLWGF4b25HN1Z2cldCa1c2cXFialdWX21RcHN3YU45MDlFTjlWUjhRSFJyTUxsc011VmstZHJkR3FKRllYN3pfdVluNmZ0SVgxTEZWLXBOcDM0Qmg1amlFY1Z1WENCMzRWWGROMWtaMGkzRXpVWFljR29UblZtUkJtMjJiQnTSAdMBQVVfeXFMUEtKNVdzQ0VnVnhnNkR4bEhoZ2M2X0lYVEFlcDdhUC1FSklfT1pFZVRyNnEzdjVmdlpWZWdBTTllbWxUTnJmbjNScnhTal9tdHdPaU1TMU1CTEppOW5HRU1pb1hZaTNYUWM4aFA4UWstZEhqSFVqMVpyRUF3YXRqREx2dThBbUNLeGlEMFN0VXczbVN6Y1RCak1QYVFjaW1HOXRQMFRldHZ0MTU1VjV2Y2cydVdrZTdNc3J2Q1A4SVlwMUxvWDZqdG5uOWhsSjV6ZlJwZw?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 10:00:54 GMT",
+        "source": "The Hindu"
       },
       {
         "title": "China goes shopping in India as exports jump 39% and BRICS trade picks up - The Economic Times",
@@ -42524,22 +42524,22 @@
         "source": "The Economic Times"
       },
       {
-        "title": "China\u2019s US$33 billion experiment to prop up property market sputters on weak demand - The Business Times",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdHE2NTB0TTNNR1ZNOGJfU25hSzdLTUhHbTVNbEstU01wdVFjR3VvM0NMMVZINHNiQ3FSdW5aN2lubkFzMUxZZjM2UHM2LUlXbDVvWVN3NWNKN0ZhUXJiVUhtcmkyenZvUlVfbnBaTVdLSnlya0ZtUGdZYVc0elF2TWpPdmNYaHg5TlVTVWhwWGcwMDYyejViNWUxR3pFR2p4czM5VXZyNl9JcExSTWdXSC1zSlk?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 06:18:00 GMT",
-        "source": "The Business Times"
-      },
-      {
         "title": "Z.ai taps markets for $9bn as investors pile into China\u2019s AI boom - TheBanker.com",
         "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9QUEZnNmpQakFxX2ZfMnF1M0NEdmtSamFSUzB5eWNxTEd3ZEdrRUhJaHh0MjVWNWdMV09RUWpUeWduSmlXX0JEakE1YU84a1hUVlRZTXYtU21qSjR5QVJmbTVzbEpkX1lIa1didS1wMzREV1NSZmREVEV3?oc=5",
         "pubDate": "Fri, 18 Sep 2026 09:34:52 GMT",
         "source": "TheBanker.com"
       },
       {
-        "title": "ASA president: China, other key markets continuing to buy US soybeans - brownfieldagnews.com",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbVBSVGpxZTZIREZmX1NrUkFSR2pZQmtmQVA0OWNZRlJCa01BRVJlZHRjcC1FYThiY1JTdTJUY0ZadTkycV9Ma0pmbERudUcya0RJX19JTmZHd3hmRnZ3Z01pbWhWODEyeGZMQzBpSzhlaDhYM3pXY3FFRUJ2WnlVbVMtMXE4TlpyOWpWTVp0ZEpmdmEycmZNdUVxYjY5LS1YbXlrdVY0N0pyZw?oc=5",
-        "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
-        "source": "brownfieldagnews.com"
+        "title": "China\u2019s US$33 billion experiment to prop up property market sputters on weak demand - The Business Times",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdHE2NTB0TTNNR1ZNOGJfU25hSzdLTUhHbTVNbEstU01wdVFjR3VvM0NMMVZINHNiQ3FSdW5aN2lubkFzMUxZZjM2UHM2LUlXbDVvWVN3NWNKN0ZhUXJiVUhtcmkyenZvUlVfbnBaTVdLSnlya0ZtUGdZYVc0elF2TWpPdmNYaHg5TlVTVWhwWGcwMDYyejViNWUxR3pFR2p4czM5VXZyNl9JcExSTWdXSC1zSlk?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 06:18:00 GMT",
+        "source": "The Business Times"
+      },
+      {
+        "title": "Citigroup (C) Moves Deeper Into China\u2019s Capital Markets as Competition Intensifies - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQS29NYVZYbUt0Rkp1UFVVSVAtaHh5U0xNMnpYQmNQUDEzek01VFduVG43VHhwWWhuU1VhcUpDSFM4azJkSnQ5SEI5TkdWVUlPSmhhekRJaTlIUDFacUhLbnhVcjN6djNOWmxoSUlYcVRBZ2h1TzZ1dE1BZEpQNzk3Z3pPUkJZaktUcGZqQ2dieFdRNkxzS3dFVFpFTQ?oc=5",
+        "pubDate": "Mon, 07 Sep 2026 07:00:00 GMT",
+        "source": "Yahoo Finance"
       },
       {
         "title": "China\u2019s PBOC Strengthens Yuan Fix Ahead of Trump-Xi Summit - Bloomberg.com",
@@ -42548,22 +42548,22 @@
         "source": "Bloomberg.com"
       },
       {
+        "title": "Grains Markets Close Mostly Lower, Except Meal Awaiting China Summit and Harvest Results - AgWeb",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQ2hPXzBEdXJXdV9OaE1vZ2p0RjRvVThMWDY5Y2ZnUjNBN3BUSU5RX0NPVHpWdDBGS1BrMVl6SV84S0tEX29McHdZazVuSmNlckRKaS1hQXRCY19USzBhb29LWGxaVGd0b3E5MWhfVTVObWJqcWFvLUZWaGd3dExJVHR3WHF3azVwa0tLYkZNbGtLdVVXY1pad0M5UzdZMmdCZVRNcEJqRWptcGpHZ2lVcXJsS25mbk9MbzVz?oc=5",
+        "pubDate": "Thu, 17 Sep 2026 22:28:00 GMT",
+        "source": "AgWeb"
+      },
+      {
         "title": "China never deliberately pursues trade surplus, central bank governor says - Reuters",
         "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTGFUTUNZa2VjQkp2dG5rZ1huQUxmd05ZcGRIOUhwM2pkdWlvOVFYODNpcEdGaHRSaFNpS21CaVRNQW5TNkpyZUZVN0lGU3NEYVhNY2JPLVlsY0VjSkt0UjFfektTa3RTZXUtb1JObExfSnZfeEZ4d3ZHZzZTRUhEZVBsS1NpUTBuLXVuSERMLWxSVXdrdDgybGtSRUpjbjNFY0NxNmZncmg1REpIalpHZUQ5WHhqNWZJVlFlaTQybUJLWFlnTElJ?oc=5",
         "pubDate": "Wed, 02 Sep 2026 07:00:00 GMT",
         "source": "Reuters"
       },
       {
-        "title": "Grains Close Mostly Higher Except Corn After Fed Decision: Await China Summit, Harvest - AgWeb",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQazU2cDJOQWRLQTl0SzM0RkhzdklLcjNHalhUVS1iTjdBVkVsdUV6TDlLM0FUT0oyOFNsZGwtaXpVNUpsdDNaMmRKXzFjVWFUb21hN3FaVzZtS0h6bG1HckY1QnJFNjJ2c2Y2NDFKVlM4LTF5YWZHUjhGNFdHQndlakJWZ2ZrVmtYaDBCNXUycWs3LWFYcFByUGtLaG1wYm1DVVNjczB1NWxDUXZSTUstLXZBQWNHX1FvMzIw?oc=5",
-        "pubDate": "Wed, 16 Sep 2026 22:01:00 GMT",
-        "source": "AgWeb"
-      },
-      {
-        "title": "Chinese Yuan Hits Strongest Level Since 2022 After PBOC Fixing - Bloomberg.com",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbHRFdk4tdXo4MFNoZjNIeXh5NUVmU0dZZ3RyaFJGS2o0UU1GY2NHSTNtYnViNldYV1RoYUlNNU0tLWdNQWlkVnRfSDlmaHNINnB6YlR6ZWNsVGV5SGxycHpZZkdPT0g4WWNoVVpJQXkwLVJIVnJIUjFVUEl1UHJTbERkNU5vQV9kN3plNkNqQWlYTEZqUGlXMkFRRWlCdFN4UnJsbVJsMGhZMUdfQzh3SEMwdw?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 05:28:00 GMT",
-        "source": "Bloomberg.com"
+        "title": "From Raising Capital to Rewarding Investors: How China Is Reshaping Its Markets to Foster a Virtuous Cycle Across Capital, Industry, and Consumption - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTHJucVFBZFZJZm5OUlVYNkpQMjVKR1FwaUZnWGR4RHFwcUIxMWxHTlI4azlBUExXUC1DWF9EVy1DbkgteHEzNktEd3J2Yk8ySWxIZWE2OFhfLVBDSWx0QkxDYzJITVRwY2lyTXFaYVNPbGlOd2RmVGhXWmJxZHJWSlp0cHpEaWZZVkVPb3RtTTlYVTBwWkFRSmc1S29uTlQ0NmlqZjViM3pZUQ?oc=5",
+        "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+        "source": "Yahoo Finance"
       },
       {
         "title": "China\u2019s Factory Activity Extends Slump Even as Gauge Rises - Bloomberg.com",
@@ -42610,10 +42610,10 @@
         "source": "CNBC"
       },
       {
-        "title": "Global Economy Is Running Out of Wiggle Room - The New York Times",
+        "title": "Global Economy Is Running Out of Wiggle Room - nytimes.com",
         "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWndEeXg3MU00cXljY1dsM1NEVUZLQWFDcy1fZXczcVZKcFc5YTZtQl9sb09KVjk1ZkFLYTlrNzE2MnRfWEpIMEk0R0FsOUFuSmxRbDZBWUJCV1Y0UFlrY1JvZVo0c1VKLTRIcTBTbENsWkNCcDhjeWlsNGVaYmUtVWZXZTQ2dw?oc=5",
         "pubDate": "Thu, 17 Sep 2026 09:04:23 GMT",
-        "source": "The New York Times"
+        "source": "nytimes.com"
       },
       {
         "title": "Oil prices fall over 3% as immediate Middle East supply concerns ease - Anadolu Ajans\u0131",
@@ -42622,10 +42622,10 @@
         "source": "Anadolu Ajans\u0131"
       },
       {
-        "title": "Oil prices are high but could be much worse. Trump has China's Xi to thank for that - ABC News - Breaking News, Latest News and Videos",
-        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONzE3WlJxXzlKQWo5bGtFUE1PRmcyRC1TSzlXT1FRSnlibXE2VzJkYmc2YVg2VGl3RDVvMHc2VEpRTUluQzVtMlB6Y1Uzd0drUWN2eEhFak1MU2lIT240V2NKRVlmbGotR2hIQzdUZ3MwaU9oWEtReDVaRWR4NXJnRUJWWFYzMlXSAYwBQVVfeXFMTlhhZjFLSjU3UkdCQUlFa3VObnlaZTE1RXNaTzJDVlpJLUdqR25mMWs1NWxrUWhBYXE0bTZyUDlNX2wtWElMdW03U25vS0d2M1RzdHVoQkZET19MbU9WVVBlaGJnQ2I0SnZVUkVPVnVpeDlnUmQ4bjNvUzJFQjc4QUNIcFBjNlEyRi12SEY?oc=5",
-        "pubDate": "Sat, 19 Sep 2026 04:32:32 GMT",
-        "source": "ABC News - Breaking News, Latest News and Videos"
+        "title": "Fed's Kashkari says inflation is still too high in 'all aspects' of US economy, in Fox News interview - Rock Hill Herald",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1tOXRLQ3AwY01PaGU3UTdSYkNQcFMwLVF2RDZjSlo3bjFicmZxNUg5OWZDRzBFbERSajR5MkNKQkpVV1duRnVTRjJVSzlGSXlMYVNDOTFMTi1sT0ZmQ3ZkTzlzaVJpY3dFdTVTenBkckt0QQ?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 15:07:00 GMT",
+        "source": "Rock Hill Herald"
       },
       {
         "title": "Russia Boosts Oil Flows as Middle East War Sends Prices Soaring - Bloomberg.com",
@@ -42634,22 +42634,22 @@
         "source": "Bloomberg.com"
       },
       {
-        "title": "Global oil prices hit $101 per barrel as Middle East conflict roils markets - CNN",
+        "title": "Global oil prices hit $101 per barrel as Middle East conflict roils markets - cnn.com",
         "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXLWc4eEZvbUdHMW5zVjhTcTJFYUZpNEFGS3h2TkZmZGw1ODN3M0JXc0x0d3lXUklDbU1xaWFLZWZraWtXRWRiTkZJUk1NUFJTSDNMV25HSXRXd09kSlFYNzREb3F0Z1Uy?oc=5",
         "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT",
-        "source": "CNN"
+        "source": "cnn.com"
       },
       {
-        "title": "Oil Prices Exceed US$100/b Following Middle East Attacks - mexicobusiness.news",
+        "title": "Oil prices are high but could be much worse. Trump has China's Xi to thank for that - ABC News - Breaking News, Latest News and Videos",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONzE3WlJxXzlKQWo5bGtFUE1PRmcyRC1TSzlXT1FRSnlibXE2VzJkYmc2YVg2VGl3RDVvMHc2VEpRTUluQzVtMlB6Y1Uzd0drUWN2eEhFak1MU2lIT240V2NKRVlmbGotR2hIQzdUZ3MwaU9oWEtReDVaRWR4NXJnRUJWWFYzMlXSAYwBQVVfeXFMTlhhZjFLSjU3UkdCQUlFa3VObnlaZTE1RXNaTzJDVlpJLUdqR25mMWs1NWxrUWhBYXE0bTZyUDlNX2wtWElMdW03U25vS0d2M1RzdHVoQkZET19MbU9WVVBlaGJnQ2I0SnZVUkVPVnVpeDlnUmQ4bjNvUzJFQjc4QUNIcFBjNlEyRi12SEY?oc=5",
+        "pubDate": "Sat, 19 Sep 2026 04:32:32 GMT",
+        "source": "ABC News - Breaking News, Latest News and Videos"
+      },
+      {
+        "title": "Oil Prices Exceed US$100/b Following Middle East Attacks - Mexico Business News",
         "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQT0lYeVBfanpPTjJCWXFpZGFLYlhDQkN3VUdUQXloU1V1THRsaHNtN3JfU0RtUVBTbFpSdTlPU2RtTHN6ajRxaDA5OHFnRElEWFAyc3MwYWV0MXJhVVY2Rl9EYWJBdmxOMFpWR0dfakdVMUlGSnVHX2tsSHktS1gwZ0xzV29fVjZrZUtuTGVQMDVlX3dRZ2VweDZjS1RwUQ?oc=5",
         "pubDate": "Thu, 17 Sep 2026 21:28:28 GMT",
-        "source": "mexicobusiness.news"
-      },
-      {
-        "title": "Oil Prices Fall 2% as Fears Ease of Middle East Supply Disruption - Marine News Magazine",
-        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNEN2b2lId1lrYndNcVI4dlV6Y1dhQ1E3OE9CZzNqUEhKQ1E2T2w0SWNqRVZOWDg3dlNIMUVkR1NVMXBZX3FZMTEzRWNTa1dHemR0M2VRNG03T2x2NGtVZGdZRks0NXdaa2RPbmRGbTRnbC1UcDhHdzI0b3JwQUwyRnBtMA?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 19:04:24 GMT",
-        "source": "Marine News Magazine"
+        "source": "Mexico Business News"
       },
       {
         "title": "Oil Prices Rise as Middle East Supply Concerns Persist - WSJ",
@@ -42660,7 +42660,7 @@
       {
         "title": "Oil slides after China asks Iran to limit Houthi attacks on Saudi oil facilities - Reuters",
         "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQeDVrUGNRTzdTOG1wQ1ljY2w0Y002MjMxSVNvM2RrLTBhM3B1dEJVS1B6bnJWTjhydS1BUHpfTVFtbHh2QkdMdFU1ZVo3MDJtQ01kbldpa0lfWFM0QXFWbmVsN1RqcjcxMHczN3JGSHItelVZMzQtYklTN1kwVlJxLU5RVzAwc3BEQV9iVFI1N0xhRXluaGZxN0NrWkxFMDk5Q0pYZw?oc=5",
-        "pubDate": "Sat, 19 Sep 2026 08:20:38 GMT",
+        "pubDate": "Fri, 18 Sep 2026 19:58:55 GMT",
         "source": "Reuters"
       },
       {
@@ -42690,7 +42690,7 @@
       {
         "title": "The New Offensive Raising Oil Prices and Complicating Trump\u2019s Iran War - WSJ",
         "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMzVMcGJpSWhIWkFyOTg0bk92OGV5QmZ5ZElSVlNfY04wNUNPRmhuZUExaFhzZHNNa2NoUlNJUXN5c28yQ2lOSkhNdldkZlM2bTFxN09UaDNiX1VPMlY5cGdEUWJnclpGZDZzQWlGdGFjYTlKOGxIemV3R1BVd2ZaTUgwUl8zTU1jcmkzWnI0bENneS1scHZOV1l2VFBfY0VpVEJhOTVUY1VTZ1ZNM2Nfdzd3bjRjMUk?oc=5",
-        "pubDate": "Thu, 17 Sep 2026 19:02:00 GMT",
+        "pubDate": "Thu, 17 Sep 2026 19:00:00 GMT",
         "source": "WSJ"
       },
       {
@@ -42714,22 +42714,10 @@
         "source": "CNBC"
       },
       {
-        "title": "BOJ lifts rates to 31-year high, pivots towards preemptive inflation fight - Reuters",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxON2RfLXdWN0d6WEpRd3JFZ09UTGszUGZWQ0FKUnkzT2VCRE1jUmxMLXg4QlNqdERTc1hqaHRUY3lNNHRLZVRzbWJLQzg1bEdkRjl4eGZKRXVrTWoyUVBhVFRWT1RkV0F4azdlaVVKSWtaZXJfbnJEOThMVW5STEZZVDlWUV9UX25TMUkyanlKMlZSY2J4bHcyV3k2NGQ4UWxOdE5lNG9n?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 09:59:32 GMT",
-        "source": "Reuters"
-      },
-      {
         "title": "Japan raises interest rate to new 31-year high to curb rising prices - BBC",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBhNkRsZVl0OU5ob3FDR0l5WTZsM21feGs2OWpJNzlqMjVjT09RMkk0MDZOc0NZTzZyQzB1T2xSZTM5TmxMRHZXcElrTU5FNDQtVEQ5R1VGc2YzUnM?oc=5",
         "pubDate": "Fri, 18 Sep 2026 07:14:57 GMT",
         "source": "BBC"
-      },
-      {
-        "title": "Is the Bank of Japan right to fear an overshoot in inflation? - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWXdyNDFFSnF2YXFHa0w0ZVowaVhkb2Y2RUg4UHVFeTVUMlRmRHJlVGFPQU00NFAxdjkxNng4VHlxY1hXcW5XUjJUUy1KV2JZd1I0ZVFzQ1FtV2M1WFA2cGkyT0c0d2tuSnU4eXJfajRQSWRFRF94SjgyUFhTWDNOQXMyX0w?oc=5",
-        "pubDate": "Sun, 20 Sep 2026 11:00:03 GMT",
-        "source": "Financial Times"
       },
       {
         "title": "Bank of Japan raises rates to 31-year high of 1.25% as inflation rises - Al Jazeera",
@@ -42738,10 +42726,16 @@
         "source": "Al Jazeera"
       },
       {
-        "title": "Japan Raises Interest Rates to 31-Year High Under U.S. Pressure - The New York Times",
+        "title": "Yen sinks after Bank of Japan raises rates to highest level since 1995 - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObUhqdVpOUjhKVG9KcFI2a1FHNGZCY0dxbHg5NWhYaVktS29lOWJFNHI2UVdKNmIzR2NOYnBfUTc3eDJxQjBHWW1RQ3htcHByRks4amxoRWpMRUVmZE9seXBJOWlXa1RFSXRmYXlxcURPM0lBTmtJV05qejZVNUl0dHZYOWs?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 16:28:24 GMT",
+        "source": "Financial Times"
+      },
+      {
+        "title": "Japan Raises Interest Rates to 31-Year High Under U.S. Pressure - nytimes.com",
         "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE42NWZYazNucmllcUJxbUZPdHIxZmF2NDBtdjRaXzNmcU9GcEdWX2dHX3NnSmhtTkI1d2JIWjdtMGlOUVdEMm8xMXFDTVh0c3QyNEFIV2U3bDZVY2czRUZDb29ISm15dUNVTDdjMktzckViV2kwLUE1Wg?oc=5",
         "pubDate": "Fri, 18 Sep 2026 03:15:30 GMT",
-        "source": "The New York Times"
+        "source": "nytimes.com"
       },
       {
         "title": "Bank of Japan raises rates and offers mixed signals about next move higher - The Japan Times",
@@ -42774,22 +42768,28 @@
         "source": "WSJ"
       },
       {
+        "title": "BOJ lifts rates to 31-year high, pivots towards preemptive inflation fight - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxON2RfLXdWN0d6WEpRd3JFZ09UTGszUGZWQ0FKUnkzT2VCRE1jUmxMLXg4QlNqdERTc1hqaHRUY3lNNHRLZVRzbWJLQzg1bEdkRjl4eGZKRXVrTWoyUVBhVFRWT1RkV0F4azdlaVVKSWtaZXJfbnJEOThMVW5STEZZVDlWUV9UX25TMUkyanlKMlZSY2J4bHcyV3k2NGQ4UWxOdE5lNG9n?oc=5",
+        "pubDate": "Fri, 18 Sep 2026 09:59:32 GMT",
+        "source": "Reuters"
+      },
+      {
         "title": "Why Japan\u2019s markets flipped the usual script after central bank rate hike - CNBC",
         "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORWppQ2FNczcyUmFXOEVSREtHVGxhcGNQQ0ZRLVZXR0RzY2p2N1VRZ1BpY2JKbmo2Rl9sTXY1MUJHTWd0T0xOZVV4bkxUM1RmVFYtbVZGNG0tMEN6N1lqaGlrUW1hOXpDcjdrTjRpSW96WHVnZnlSbkd3cW9QQUNIU2x5NTJrYkZSZ0FaUjVB0gGTAUFVX3lxTE5uT3ptTkU0ZGlvTGNaRmpJdGZuelVRMWNVdHVETmZQbWg1V1VuMmZFbXNUU0UyOFlDeVJKMEp1YUllU3pyS2hBQjVLRklmemc1S21IcENhY184Q0JoM05IbTl0ZDlQODBjUjF6NjBXRGhrN2xPSGdLZnFKZUVZeElIUWV2REtpQ01tVGNXUjA2YkZoQQ?oc=5",
         "pubDate": "Fri, 18 Sep 2026 07:19:25 GMT",
         "source": "CNBC"
       },
       {
-        "title": "Yen sinks after Bank of Japan raises rates to highest level since 1995 - Financial Times",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObUhqdVpOUjhKVG9KcFI2a1FHNGZCY0dxbHg5NWhYaVktS29lOWJFNHI2UVdKNmIzR2NOYnBfUTc3eDJxQjBHWW1RQ3htcHByRks4amxoRWpMRUVmZE9seXBJOWlXa1RFSXRmYXlxcURPM0lBTmtJV05qejZVNUl0dHZYOWs?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 16:28:24 GMT",
+        "title": "Is the Bank of Japan right to fear an overshoot in inflation? - Financial Times",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWXdyNDFFSnF2YXFHa0w0ZVowaVhkb2Y2RUg4UHVFeTVUMlRmRHJlVGFPQU00NFAxdjkxNng4VHlxY1hXcW5XUjJUUy1KV2JZd1I0ZVFzQ1FtV2M1WFA2cGkyT0c0d2tuSnU4eXJfajRQSWRFRF94SjgyUFhTWDNOQXMyX0w?oc=5",
+        "pubDate": "Sun, 20 Sep 2026 11:00:03 GMT",
         "source": "Financial Times"
       },
       {
-        "title": "Architects of Japan\u2019s Easy-Money Policies Are Changing Their Minds - The New York Times",
+        "title": "Architects of Japan\u2019s Easy-Money Policies Are Changing Their Minds - nytimes.com",
         "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONXI1YkxsY041TUVYVFhVT0g4TXlvNkpVM1dHeW04alpmOXJaX3pYbDJDTF9sSmY2dEN4V2pfNW55NlktZVo4QXE0bzQzREhOZzdVSE9ORS01bE9MMjZXVWVGcmdxMTlWdFAtVWV2OUg2Z2xzUEYtUDR2TGdMcEJEbVQ3dHc?oc=5",
         "pubDate": "Tue, 15 Sep 2026 04:00:08 GMT",
-        "source": "The New York Times"
+        "source": "nytimes.com"
       },
       {
         "title": "BOJ faces higher bar to support yen after Fed\u2019s hawkish hike - The Japan Times",
@@ -42800,7 +42800,7 @@
       {
         "title": "Bank of Japan Raises Rates, Making U.S. Less Alluring for Tokyo Investors - WSJ",
         "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPaUo2NVY4c3UzcU9VeDBvMHZ2bkI2bTJsUEkxeW5HNHBQZ0ZkNXgzZlVqekJKUHFpSDZ2ZTAwZERVTmttV1ZJY0tBSllxaE9vN1poTG9sNWZFcVZXSlVxdkRwanpuaTF3VFRHbm1ZQ3MxeEdzQlNpa28tUnRSMlFfLWpvXzJjUURRMno0X3VaOUtENmNiQ1NvSEk4Xy1xdGZNbWV6RXdsNTl6ZURJbGhXcF96MUxOQk0wM0YwWkN3SnIxdHNyWjB4YjNn?oc=5",
-        "pubDate": "Fri, 18 Sep 2026 08:56:00 GMT",
+        "pubDate": "Fri, 18 Sep 2026 10:16:51 GMT",
         "source": "WSJ"
       },
       {
@@ -42970,45 +42970,45 @@
       "label": "Crypto",
       "riskPct": 55.00000000000001,
       "returnPct": 20.0,
-      "weight": 1072960.480205822
+      "weight": 1084396.392811856
     }
   ],
   "drift": [
     {
       "label": "Emergency Fund",
-      "current": 0.047260426119756935,
+      "current": 0.04722598071928238,
       "target": 0.1,
-      "driftPts": -5.273957388024307
+      "driftPts": -5.277401928071763
     },
     {
       "label": "Pension Fund",
-      "current": 0.04993167278162155,
+      "current": 0.04989528046342769,
       "target": 0.15,
-      "driftPts": -10.006832721837844
+      "driftPts": -10.01047195365723
     },
     {
       "label": "Debt Funds",
-      "current": 0.18550667562867193,
+      "current": 0.18537147050554117,
       "target": 0.2,
-      "driftPts": -1.4493324371328082
+      "driftPts": -1.4628529494458835
     },
     {
       "label": "Indian Equity",
-      "current": 0.07621620676533,
+      "current": 0.07616065716537442,
       "target": 0.15,
-      "driftPts": -7.378379323467
+      "driftPts": -7.383934283462558
     },
     {
       "label": "Foreign Equity",
-      "current": 0.5726524012900633,
+      "current": 0.5722350279628493,
       "target": 0.35,
-      "driftPts": 22.265240129006337
+      "driftPts": 22.223502796284933
     },
     {
       "label": "Crypto",
-      "current": 0.06843261741455624,
+      "current": 0.06911158318352506,
       "target": 0.05,
-      "driftPts": 1.8432617414556236
+      "driftPts": 1.9111583183525058
     }
   ],
   "targetAllocation": {
@@ -43023,8 +43023,8 @@
     {
       "name": "Financial Independence (25x annual expenses)",
       "target": 48115500.0,
-      "current": 17773650.874885265,
-      "progressPct": 0.36939553522015284
+      "current": 17785086.787491295,
+      "progressPct": 0.36963321149091866
     }
   ],
   "contributionsForecast": {
@@ -43086,7 +43086,7 @@
     },
     {
       "severity": "high",
-      "message": "Foreign Equity is +22.3 pts vs target (57.3% vs 35.0%) \u2014 rebalancing suggested."
+      "message": "Foreign Equity is +22.2 pts vs target (57.2% vs 35.0%) \u2014 rebalancing suggested."
     }
   ],
   "dataSources": {
