@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T14:21:42",
+  "generatedAt": "2026-09-26T17:59:20",
   "fx": {
     "usdinr": 95.82
   },
@@ -538,18 +538,18 @@
     {
       "symbol": "BTC",
       "qty": 0.10811828,
-      "priceUsd": 83955,
-      "changePct": 0.0048257300253556085,
-      "valueInr": 869764.866314868,
+      "priceUsd": 84097,
+      "changePct": 0.00450643591717177,
+      "valueInr": 871235.9712045912,
       "low52": 58566.09,
       "high52": 124739.81
     },
     {
       "symbol": "ETH",
       "qty": 0.96192,
-      "priceUsd": 2687.5,
-      "changePct": 0.000993905139528005,
-      "valueInr": 247710.03119999997,
+      "priceUsd": 2688.8,
+      "changePct": 0.0021602783480627425,
+      "valueInr": 247829.85372671997,
       "low52": 1566.01,
       "high52": 4690.84
     }
@@ -591,13 +591,13 @@
     "debt": 2908574.0,
     "indianEquity": 1195000.0,
     "foreignEquity": 9296407.0527,
-    "crypto": 1117474.897514868
+    "crypto": 1119065.8249313112
   },
   "netWorth": {
-    "husband": 16041338.640214868,
-    "husbandExPensionEmergency": 14517455.950214868,
+    "husband": 16042929.56763131,
+    "husbandExPensionEmergency": 14519046.87763131,
     "wifeCached": 2094570.9164794413,
-    "combined": 18135909.55669431
+    "combined": 18137500.48411075
   },
   "monthlySavings": {
     "sb": 257500.0,
@@ -751,7 +751,7 @@
   "assumptions": {
     "inflation": 0.06,
     "savingsGrowthYoY": 0.1,
-    "blendedPortfolioReturn": 0.1060035310075093,
+    "blendedPortfolioReturn": 0.1060128523449208,
     "assetReturns": {
       "emergency": 0.035,
       "pension": 0.085,
@@ -774,104 +774,104 @@
     ],
     "scenario1": [
       {
-        "nominal": 21759909.55669431,
-        "real": 20528216.56291916
+        "nominal": 21761500.48411075,
+        "real": 20529717.437840328
       },
       {
-        "nominal": 29007909.55669431,
-        "real": 24355600.224257533
+        "nominal": 29009500.48411075,
+        "real": 24356935.99759428
       },
       {
-        "nominal": 36255909.556694314,
-        "real": 27092524.730932407
+        "nominal": 36257500.48411075,
+        "real": 27093713.564446777
       },
       {
-        "nominal": 54375909.556694314,
-        "real": 30363223.886466946
+        "nominal": 54377500.48411075,
+        "real": 30364112.252026737
       },
       {
-        "nominal": 72495909.55669431,
-        "real": 30250010.104252305
+        "nominal": 72497500.48411074,
+        "real": 30250673.942677345
       },
       {
-        "nominal": 90615909.55669431,
-        "real": 28254468.930859186
+        "nominal": 90617500.48411074,
+        "real": 28254964.98954776
       },
       {
-        "nominal": 108735909.55669431,
-        "real": 25335318.01330519
+        "nominal": 108737500.48411074,
+        "real": 25335688.69721445
       },
       {
-        "nominal": 126855909.55669431,
-        "real": 22086899.01970363
+        "nominal": 126857500.48411074,
+        "real": 22087176.016284376
       }
     ],
     "scenario2": [
       {
-        "nominal": 23959949.774424482,
-        "real": 22603726.202287246
+        "nominal": 23961920.447552446,
+        "real": 22605585.327879664
       },
       {
-        "nominal": 37624981.55764058,
-        "real": 31590660.039529763
+        "nominal": 37628035.967540905,
+        "real": 31593224.580980357
       },
       {
-        "nominal": 54501383.13586737,
-        "real": 40726603.98078118
+        "nominal": 54506087.861457705,
+        "real": 40730119.62542965
       },
       {
-        "nominal": 116141330.57830247,
-        "real": 64852712.37889617
+        "nominal": 116154161.21895032,
+        "real": 64859876.9416184
       },
       {
-        "nominal": 220621837.68442118,
-        "real": 92057784.50097656
+        "nominal": 220653269.45371264,
+        "real": 92070899.88009898
       },
       {
-        "nominal": 397717646.78364563,
-        "real": 124010242.23315077
+        "nominal": 397788790.92469084,
+        "real": 124032425.31261891
       },
       {
-        "nominal": 697897330.7188919,
-        "real": 162609122.2898259
+        "nominal": 698049659.1447855,
+        "real": 162644614.6044459
       },
       {
-        "nominal": 1206705772.351625,
-        "real": 210099699.9947595
+        "nominal": 1207019222.3108964,
+        "real": 210154274.80820218
       }
     ],
     "scenario3": [
       {
-        "nominal": 23959949.774424486,
-        "real": 22603726.20228725
+        "nominal": 23961920.44755245,
+        "real": 22605585.327879667
       },
       {
-        "nominal": 38847000.30297231,
-        "real": 32616690.54233722
+        "nominal": 38850063.89401748,
+        "real": 32619262.79245407
       },
       {
-        "nominal": 59176427.77636944,
-        "real": 44220069.29691001
+        "nominal": 59181198.326412044,
+        "real": 44223634.12941842
       },
       {
-        "nominal": 146100992.90282944,
-        "real": 81582031.33905266
+        "nominal": 146114766.06049114,
+        "real": 81589722.19835259
       },
       {
-        "nominal": 321398281.53882277,
-        "real": 134108273.46659523
+        "nominal": 321434764.5310657,
+        "real": 134123496.5445693
       },
       {
-        "nominal": 663557744.1759596,
-        "real": 206900441.19593126
+        "nominal": 663647484.7062755,
+        "real": 206928422.71747702
       },
       {
-        "nominal": 1316040970.913329,
-        "real": 306635743.9098223
+        "nominal": 1316249448.7766306,
+        "real": 306684318.96646196
       },
       {
-        "nominal": 2538800266.5921373,
-        "real": 442030846.7723103
+        "nominal": 2539263794.742883,
+        "real": 442111551.71931744
       }
     ]
   },
@@ -881,14 +881,14 @@
     "factors": [
       "High equity/crypto exposure (72.4%) \u2014 strong growth potential but higher volatility.",
       "Crypto allocation is 7.0% \u2014 highly volatile asset class.",
-      "Foreign currency exposure is 58.0% of Husband's tracked portfolio \u2014 sensitive to USD/INR fluctuations."
+      "Foreign currency exposure is 57.9% of Husband's tracked portfolio \u2014 sensitive to USD/INR fluctuations."
     ]
   },
   "insights": [
-    "Combined household net worth is ~\u20b918,135,910, growing by ~\u20b9302,000/month.",
-    "Foreign equity is 58.0% of Husband's tracked portfolio, mostly MSFT stock/ESPP/ESOP.",
+    "Combined household net worth is ~\u20b918,137,500, growing by ~\u20b9302,000/month.",
+    "Foreign equity is 57.9% of Husband's tracked portfolio, mostly MSFT stock/ESPP/ESOP.",
     "Household savings rate is 57.0% of combined income \u2014 excellent.",
-    "At a blended optimistic portfolio return of 10.6% (vs 6% inflation), disciplined investing plus a 10% YoY savings step-up could grow real net worth to ~\u20b9442,030,847 in 30 years (today's money).",
+    "At a blended optimistic portfolio return of 10.6% (vs 6% inflation), disciplined investing plus a 10% YoY savings step-up could grow real net worth to ~\u20b9442,111,552 in 30 years (today's money).",
     "Emergency fund covers ~4.6 months of household living expenses \u2014 consider topping up toward the standard 6-month cushion."
   ],
   "history": {
@@ -9786,7 +9786,7 @@
         84382.4,
         84377.97,
         84075.72,
-        83955.81
+        84096.91
       ]
     },
     "ETH": {
@@ -10524,7 +10524,7 @@
         2684.34,
         2687.13,
         2690.89,
-        2687.5
+        2688.81
       ]
     }
   },
@@ -12057,12 +12057,12 @@
   "marketStatus": {
     "status": "closed",
     "label": "Market Closed (Weekend)",
-    "etTime": "2026-09-26 10:18 ET",
-    "istTime": "2026-09-26 19:48 IST",
+    "etTime": "2026-09-26 13:56 ET",
+    "istTime": "2026-09-26 23:26 IST",
     "india": {
       "status": "closed",
       "label": "Offline (Weekend)",
-      "istTime": "2026-09-26 19:48 IST"
+      "istTime": "2026-09-26 23:26 IST"
     }
   },
   "watchlist": [
@@ -42258,45 +42258,45 @@
       "label": "Crypto",
       "riskPct": 55.00000000000001,
       "returnPct": 20.0,
-      "weight": 1117474.897514868
+      "weight": 1119065.8249313112
     }
   ],
   "drift": [
     {
       "label": "Emergency Fund",
-      "current": 0.046193152368365846,
+      "current": 0.04618857153715014,
       "target": 0.1,
-      "driftPts": -5.380684763163416
+      "driftPts": -5.381142846284987
     },
     {
       "label": "Pension Fund",
-      "current": 0.048804074744569666,
+      "current": 0.04879923499630437,
       "target": 0.15,
-      "driftPts": -10.119592525543034
+      "driftPts": -10.120076500369562
     },
     {
       "label": "Debt Funds",
-      "current": 0.18131741154745928,
+      "current": 0.18129943086382583,
       "target": 0.2,
-      "driftPts": -1.8682588452540727
+      "driftPts": -1.8700569136174183
     },
     {
       "label": "Indian Equity",
-      "current": 0.07449502979783695,
+      "current": 0.07448764235748236,
       "target": 0.15,
-      "driftPts": -7.550497020216304
+      "driftPts": -7.551235764251764
     },
     {
       "label": "Foreign Equity",
-      "current": 0.5795281342290445,
+      "current": 0.5794706642268571,
       "target": 0.35,
-      "driftPts": 22.95281342290445
+      "driftPts": 22.947066422685715
     },
     {
       "label": "Crypto",
-      "current": 0.06966219731272376,
+      "current": 0.0697544560183803,
       "target": 0.05,
-      "driftPts": 1.9662197312723757
+      "driftPts": 1.9754456018380302
     }
   ],
   "targetAllocation": {
@@ -42311,8 +42311,8 @@
     {
       "name": "Financial Independence (25x annual expenses)",
       "target": 48115500.0,
-      "current": 18135909.55669431,
-      "progressPct": 0.376924474580838
+      "current": 18137500.48411075,
+      "progressPct": 0.37695753933993725
     }
   ],
   "contributionsForecast": {
@@ -42374,7 +42374,7 @@
     },
     {
       "severity": "high",
-      "message": "Foreign Equity is +23.0 pts vs target (58.0% vs 35.0%) \u2014 rebalancing suggested."
+      "message": "Foreign Equity is +22.9 pts vs target (57.9% vs 35.0%) \u2014 rebalancing suggested."
     }
   ],
   "dataSources": {
